@@ -54,16 +54,12 @@
 .hero__tag--r { right: var(--gutter); text-align: right; }
 
 .hero__content {
-  pointer-events: none;
   align-self: end;
   display: grid;
   gap: var(--s5);
   padding-block: clamp(120px, 22vh, 260px) clamp(32px, 5vw, 64px);
   color: #f2efe7;
 }
-.hero__content :is(a, button) { pointer-events: auto; }
-.hero__visual .ambient__toggle { top: 72px; bottom: auto; }
-
 .hero__title {
   font-size: clamp(76px, 15.2vw, 260px);
   line-height: 0.8;

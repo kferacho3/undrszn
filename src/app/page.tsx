@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { AmbientLoop } from "@/components/film/AmbientLoop";
 import { FilmPlayer } from "@/components/film/FilmPlayer";
 import { Media } from "@/components/Media";
 import { Newsletter } from "@/components/Newsletter";
@@ -29,7 +28,7 @@ export default function HomePage() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__visual">
           <Media id="black-portrait" ratio="auto" priority sizes="50vw" width={1800} focus="50% 25%" />
-          <AmbientLoop film={films["ambient-loop"]} priority sizes="50vw" focus="50% 25%" />
+          <Media id="cream-hood" ratio="auto" priority sizes="50vw" width={1800} focus="50% 25%" />
         </div>
         <span className="hero__tag hero__tag--l">
           01 / Black

@@ -134,3 +134,10 @@ chapter timings. Captions have not been supplied or transcribed. Preview mode
 remains enabled. The original compression script above remains available for
 future masters; the delivered assets use the stricter 95,000,000-byte budget in
 the Python script.
+
+### Landing-page hero revision
+
+The homepage hero uses the original black-portrait and cream-hood photographs.
+The Journey player remains below the hero, and both companion films remain on
+the film and campaign pages. The silent loop assets remain available in the
+registry but are no longer mounted in the homepage hero.
