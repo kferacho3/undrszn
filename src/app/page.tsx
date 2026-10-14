@@ -77,6 +77,28 @@ export default function HomePage() {
         ))}
       </section>
 
+      <section className="container section campaign-shorts" aria-labelledby="campaign-shorts-title">
+        <div className="campaign-shorts__copy">
+          <span className="eyebrow eyebrow--red">Dirty Rodman / In motion</span>
+          <h2 id="campaign-shorts-title" className="display h-lg">
+            Off the<br />hanger.<br /><span className="outline-text">Into the street.</span>
+          </h2>
+          <p>Two short scenes. One unmistakable graphic. Watch the Dirty Rodman collection come to life.</p>
+          <Link className="link-arrow" href="/pages/behind-the-scenes-dirty-rodman">
+            Explore the campaign ↗
+          </Link>
+        </div>
+        {[films["campaign-cut"], films["bts-reel"]].map((film, index) => (
+          <article className="campaign-shorts__film" key={film.id}>
+            <FilmPlayer film={film} variant="card" showMeta={false} />
+            <div className="campaign-shorts__caption">
+              <h3 className="film-card__title">{index === 0 ? "The Street" : "The Ride"}</h3>
+              <span className="micro">0{index + 1} / {film.durationLabel}</span>
+            </div>
+          </article>
+        ))}
+      </section>
+
       {/* 03 — Merchandise first */}
       <section className="container section">
         <ProductShowcase kicker="The collection / 01—02" title="Choose your side." />

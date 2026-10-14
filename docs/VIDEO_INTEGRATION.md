@@ -141,3 +141,8 @@ The homepage hero uses the original black-portrait and cream-hood photographs.
 The Journey player remains below the hero, and both companion films remain on
 the film and campaign pages. The silent loop assets remain available in the
 registry but are no longer mounted in the homepage hero.
+
+The homepage also features both portrait campaign films in an “Off the hanger.
+Into the street.” section below the acronym strip. They use the existing
+click-to-play player with audio controls, HD/SD selection, and coordinated
+playback. The photo hero stays intact.

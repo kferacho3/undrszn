@@ -342,3 +342,25 @@
   padding-block: clamp(56px, 8vw, 120px);
 }
 .empty p { color: var(--ink-2); max-width: 44ch; }
+
+/* Portrait campaign films sit below the photographic hero. */
+.campaign-shorts {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+}
+.campaign-shorts__copy { display: grid; justify-items: start; gap: var(--s5); }
+.campaign-shorts__copy .eyebrow { margin-bottom: 0; }
+.campaign-shorts__copy p { max-width: 32ch; color: var(--ink-2); }
+.campaign-shorts__film { min-width: 0; display: grid; gap: var(--s4); }
+.campaign-shorts__caption { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); }
+.campaign-shorts__caption .micro { color: var(--ink-2); white-space: nowrap; }
+@media (max-width: 1100px) {
+  .campaign-shorts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .campaign-shorts__copy { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .campaign-shorts { grid-template-columns: minmax(0, 1fr); }
+  .campaign-shorts__film { width: 100%; max-width: 380px; justify-self: center; }
+}
