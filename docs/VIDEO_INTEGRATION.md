@@ -110,3 +110,27 @@ away and stays paused under “reduce motion”. `/preview-notes` lists each fil
 - Only one film plays at a time.
 - No fake play buttons while a film is pending.
 - The two tiny archive thumbnails (`film-car`, `film-arrival`) are never enlarged into heroes.
+
+## Delivered media — October 14, 2026
+
+The three supplied MP4 exports are now connected in `src/data/films.ts`.
+Their pre-verified encodes live in `public/videos/`; regenerate them with
+`python3 scripts/optimize-videos.py [source-directory]`.
+
+| Slot | Source export prefix | Runtime | HD / SD size |
+| --- | --- | --- | --- |
+| Journey | `ce4e87e57e8c4b46aad1096b792045f9` | 06:40 | 86 / 43 MB |
+| Campaign cut — Street | `97c29db286c5401daea86e7b5362badf` | 00:07 | 1.58 / 0.81 MB |
+| Companion — The Ride (`bts-reel`) | `2625399e72a24168bdce5e28a6e5c375` | 00:10 | 1.43 / 0.70 MB |
+| Ambient hero | Silent Street SD copy | 00:07 | 0.72 MB |
+
+The two shorts are portrait campaign animations, so their registry aspect ratios
+and descriptions reflect that footage. The existing `bts-reel` slot ID is retained
+for its placements; it does not imply the supplied clip is behind-the-scenes footage.
+All playback copies preserve source duration and use H.264/AAC with fast-start
+metadata; the ambient copies have no audio track. No raw masters are committed.
+The Journey's six invented chapter markers have been removed pending verified
+chapter timings. Captions have not been supplied or transcribed. Preview mode
+remains enabled. The original compression script above remains available for
+future masters; the delivered assets use the stricter 95,000,000-byte budget in
+the Python script.

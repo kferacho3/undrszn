@@ -1,0 +1,31 @@
+{
+  "film": {
+    "source": "ce4e87e57e8c4b46aad1096b792045f9.HD-1080p-7.2Mbps-93595930.mp4",
+    "duration": 400.525125,
+    "width": 1920,
+    "height": 1080,
+    "hd": "/videos/film-hd.mp4",
+    "sd": "/videos/film-sd.mp4",
+    "poster": "/videos/film-poster.jpg"
+  },
+  "portrait-01": {
+    "source": "2625399e72a24168bdce5e28a6e5c375.HD-1080p-2.5Mbps-94277544.mp4",
+    "duration": 10.041667,
+    "width": 606,
+    "height": 1080,
+    "hd": "/videos/portrait-01-hd.mp4",
+    "sd": "/videos/portrait-01-sd.mp4",
+    "poster": "/videos/portrait-01-poster.jpg",
+    "loop": "/videos/portrait-01-loop.mp4"
+  },
+  "portrait-02": {
+    "source": "97c29db286c5401daea86e7b5362badf.HD-1080p-7.2Mbps-94541455.mp4",
+    "duration": 7.066667,
+    "width": 606,
+    "height": 1080,
+    "hd": "/videos/portrait-02-hd.mp4",
+    "sd": "/videos/portrait-02-sd.mp4",
+    "poster": "/videos/portrait-02-poster.jpg",
+    "loop": "/videos/portrait-02-loop.mp4"
+  }
+}
