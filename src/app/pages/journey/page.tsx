@@ -78,7 +78,7 @@ export default function JourneyPage() {
           </Link>
         </SectionHead>
         <div className="film-grid">
-          {[films["campaign-cut"], films["bts-reel"]].map((film) => (
+          {[films["campaign-cut"], films["bts-reel"], films.interview].map((film) => (
             <article key={film.id} className="reveal" style={{ display: "grid", gap: 16 }}>
               <FilmPlayer film={film} variant="card" showMeta={false} />
               <span className="eyebrow eyebrow--red">

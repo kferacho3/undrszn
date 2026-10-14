@@ -1,7 +1,7 @@
 {
   "audit_date": "2026-10-14",
   "mode": "design-prototype",
-  "media_mode": "remote-originals",
+  "media_mode": "local-optimized",
   "media_count": 23,
   "assets": [
     {
@@ -10,9 +10,27 @@
       "alt": "Black Dirty Rodman hoodie, front product view",
       "kind": "packshot",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Excess white canvas: normalize the product scale without changing artwork.",
-      "local_file": "assets/black-front.png"
+      "local_file": "/media/images/black-front-1080.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-front-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-front-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-front-800.webp"
+        },
+        {
+          "width": 1080,
+          "src": "/media/images/black-front-1080.webp"
+        }
+      ]
     },
     {
       "id": "black-portrait",
@@ -20,9 +38,35 @@
       "alt": "Front portrait showing the black hoodie and its multicolor chest graphic",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/black-portrait.jpg"
+      "local_file": "/media/images/black-portrait-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-portrait-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-portrait-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-portrait-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/black-portrait-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/black-portrait-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/black-portrait-2400.webp"
+        }
+      ]
     },
     {
       "id": "black-frame-02",
@@ -30,9 +74,35 @@
       "alt": "Additional black Dirty Rodman product photograph",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "URL discovered; pixels not verified",
-      "notes": "Web image request timed out; verify the original during asset export.",
-      "local_file": "assets/black-frame-02.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original downloaded and decoded successfully; local responsive WebP copies available.",
+      "local_file": "/media/images/black-frame-02-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-frame-02-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-frame-02-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-frame-02-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/black-frame-02-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/black-frame-02-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/black-frame-02-2400.webp"
+        }
+      ]
     },
     {
       "id": "black-frame-03",
@@ -40,9 +110,35 @@
       "alt": "Additional black Dirty Rodman product photograph",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "URL discovered; pixels not verified",
-      "notes": "Web image request timed out; verify the original during asset export.",
-      "local_file": "assets/black-frame-03.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original downloaded and decoded successfully; local responsive WebP copies available.",
+      "local_file": "/media/images/black-frame-03-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-frame-03-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-frame-03-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-frame-03-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/black-frame-03-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/black-frame-03-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/black-frame-03-2400.webp"
+        }
+      ]
     },
     {
       "id": "black-full-look",
@@ -50,9 +146,35 @@
       "alt": "Full-length styling photograph of the black hoodie with bright green shorts",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/black-full-look.jpg"
+      "local_file": "/media/images/black-full-look-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-full-look-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-full-look-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-full-look-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/black-full-look-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/black-full-look-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/black-full-look-2400.webp"
+        }
+      ]
     },
     {
       "id": "black-seated",
@@ -60,9 +182,35 @@
       "alt": "Seated styling photograph of the black hoodie against a muted red studio backdrop",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/black-seated.jpg"
+      "local_file": "/media/images/black-seated-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/black-seated-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/black-seated-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/black-seated-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/black-seated-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/black-seated-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/black-seated-2400.webp"
+        }
+      ]
     },
     {
       "id": "cream-back-product",
@@ -70,9 +218,27 @@
       "alt": "Cream hoodie back product view showing the hood and large back lettering",
       "kind": "packshot",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Inspect edge quality against both light and dark backgrounds.",
-      "local_file": "assets/cream-back-product.png"
+      "local_file": "/media/images/cream-back-product-1080.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-back-product-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-back-product-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-back-product-800.webp"
+        },
+        {
+          "width": 1080,
+          "src": "/media/images/cream-back-product-1080.webp"
+        }
+      ]
     },
     {
       "id": "cream-front",
@@ -80,9 +246,27 @@
       "alt": "Cream Deluxe Dirty Rodman hoodie, front product view",
       "kind": "packshot",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Excess white canvas: normalize the product scale without changing artwork.",
-      "local_file": "assets/cream-front.png"
+      "local_file": "/media/images/cream-front-1080.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-front-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-front-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-front-800.webp"
+        },
+        {
+          "width": 1080,
+          "src": "/media/images/cream-front-1080.webp"
+        }
+      ]
     },
     {
       "id": "cream-hood",
@@ -90,9 +274,35 @@
       "alt": "Cream hoodie worn with the hood up, showing the UNDR hood lettering",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/cream-hood.jpg"
+      "local_file": "/media/images/cream-hood-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-hood-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-hood-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-hood-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/cream-hood-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/cream-hood-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/cream-hood-2400.webp"
+        }
+      ]
     },
     {
       "id": "cream-portrait",
@@ -100,9 +310,35 @@
       "alt": "Front portrait showing the cream hoodie and its orange and red chest artwork",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/cream-portrait.jpg"
+      "local_file": "/media/images/cream-portrait-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-portrait-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-portrait-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-portrait-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/cream-portrait-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/cream-portrait-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/cream-portrait-2400.webp"
+        }
+      ]
     },
     {
       "id": "cream-full-look",
@@ -110,9 +346,35 @@
       "alt": "Full-length styling photograph of the cream hoodie with denim shorts",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/cream-full-look.jpg"
+      "local_file": "/media/images/cream-full-look-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-full-look-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-full-look-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-full-look-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/cream-full-look-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/cream-full-look-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/cream-full-look-2400.webp"
+        }
+      ]
     },
     {
       "id": "cream-back-campaign",
@@ -120,9 +382,31 @@
       "alt": "Seated rear view of the cream hoodie in a red-lit studio",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Also used on the current homepage. Preserve the printed garment text exactly.",
-      "local_file": "assets/cream-back-campaign.jpg"
+      "local_file": "/media/images/cream-back-campaign-1320.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-back-campaign-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-back-campaign-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-back-campaign-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/cream-back-campaign-1200.webp"
+        },
+        {
+          "width": 1320,
+          "src": "/media/images/cream-back-campaign-1320.webp"
+        }
+      ]
     },
     {
       "id": "cream-side",
@@ -130,9 +414,35 @@
       "alt": "Three-quarter portrait showing the cream hoodie chest graphic",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/cream-side.jpg"
+      "local_file": "/media/images/cream-side-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-side-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-side-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-side-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/cream-side-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/cream-side-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/cream-side-2400.webp"
+        }
+      ]
     },
     {
       "id": "cream-back-detail",
@@ -140,9 +450,27 @@
       "alt": "Closer rear view of the cream hoodie, hood lettering and back message",
       "kind": "photograph",
       "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/cream-back-detail.jpg"
+      "local_file": "/media/images/cream-back-detail-1060.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/cream-back-detail-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/cream-back-detail-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/cream-back-detail-800.webp"
+        },
+        {
+          "width": 1060,
+          "src": "/media/images/cream-back-detail-1060.webp"
+        }
+      ]
     },
     {
       "id": "bts-campaign",
@@ -150,9 +478,27 @@
       "alt": "Campaign portrait of a young person wearing the black Dirty Rodman hoodie",
       "kind": "photograph",
       "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Confirm campaign/model permissions before reuse in paid advertising.",
-      "local_file": "assets/bts-campaign.png"
+      "local_file": "/media/images/bts-campaign-1024.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/bts-campaign-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/bts-campaign-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/bts-campaign-800.webp"
+        },
+        {
+          "width": 1024,
+          "src": "/media/images/bts-campaign-1024.webp"
+        }
+      ]
     },
     {
       "id": "bts-pair",
@@ -160,9 +506,31 @@
       "alt": "Studio photograph showing the black hoodie front and cream hoodie back together",
       "kind": "photograph",
       "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/bts-pair.jpg"
+      "local_file": "/media/images/bts-pair-1290.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/bts-pair-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/bts-pair-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/bts-pair-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/bts-pair-1200.webp"
+        },
+        {
+          "width": 1290,
+          "src": "/media/images/bts-pair-1290.webp"
+        }
+      ]
     },
     {
       "id": "bts-black",
@@ -170,9 +538,27 @@
       "alt": "Behind-the-scenes portrait of the black hoodie in red studio lighting",
       "kind": "photograph",
       "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "",
-      "local_file": "assets/bts-black.jpg"
+      "local_file": "/media/images/bts-black-1180.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/bts-black-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/bts-black-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/bts-black-800.webp"
+        },
+        {
+          "width": 1180,
+          "src": "/media/images/bts-black-1180.webp"
+        }
+      ]
     },
     {
       "id": "bts-studio",
@@ -180,9 +566,35 @@
       "alt": "Behind-the-scenes cream hoodie photograph with studio lighting equipment visible",
       "kind": "photograph",
       "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
-      "inspection": "visually reviewed",
-      "notes": "HEIC source: export or request a verified browser-compatible JPEG/WebP derivative.",
-      "local_file": "assets/bts-studio.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "HEIC source delivered by Shopify as JPEG, then converted to responsive WebP for local playback.",
+      "local_file": "/media/images/bts-studio-2400.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/bts-studio-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/bts-studio-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/bts-studio-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/bts-studio-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/bts-studio-1800.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/media/images/bts-studio-2400.webp"
+        }
+      ]
     },
     {
       "id": "brand-riders",
@@ -190,9 +602,31 @@
       "alt": "UNDR community photograph with branded jackets and dirt bikes",
       "kind": "photograph",
       "source_page": "https://undrszn.com/pages/about-undr-rated-szn",
-      "inspection": "visually reviewed",
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
       "notes": "Archive/story media. The jackets are not among the two products currently listed; do not imply they can be purchased.",
-      "local_file": "assets/brand-riders.jpg"
+      "local_file": "/media/images/brand-riders-1537.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/brand-riders-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/brand-riders-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/brand-riders-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/brand-riders-1200.webp"
+        },
+        {
+          "width": 1537,
+          "src": "/media/images/brand-riders-1537.webp"
+        }
+      ]
     },
     {
       "id": "film-arrival",
@@ -200,9 +634,15 @@
       "alt": "Opening film preview from the existing homepage",
       "kind": "video_poster",
       "source_page": "https://undrszn.com/",
-      "inspection": "URL discovered; pixels not verified",
-      "notes": "Discovered thumbnail request failed. Full film source is unresolved; do not invent an MP4 URL.",
-      "local_file": "assets/film-arrival.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original archive still retained locally. Corresponding full video is connected in the film registry.",
+      "local_file": "/media/images/film-arrival-56.webp",
+      "variants": [
+        {
+          "width": 56,
+          "src": "/media/images/film-arrival-56.webp"
+        }
+      ]
     },
     {
       "id": "film-gallery",
@@ -210,9 +650,35 @@
       "alt": "Film still of a person approaching a storefront wearing a graphic backpack",
       "kind": "video_poster",
       "source_page": "https://undrszn.com/",
-      "inspection": "visually reviewed",
-      "notes": "Still image only. Obtain the Shopify-hosted video object/source before implementing playback.",
-      "local_file": "assets/film-gallery.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original archive still retained locally. Corresponding full video is connected in the film registry.",
+      "local_file": "/media/images/film-gallery-1920.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/film-gallery-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/film-gallery-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/film-gallery-800.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/media/images/film-gallery-1200.webp"
+        },
+        {
+          "width": 1800,
+          "src": "/media/images/film-gallery-1800.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/media/images/film-gallery-1920.webp"
+        }
+      ]
     },
     {
       "id": "film-interview",
@@ -220,9 +686,27 @@
       "alt": "Film still of a person outdoors wearing a graphic shirt",
       "kind": "video_poster",
       "source_page": "https://undrszn.com/",
-      "inspection": "visually reviewed",
-      "notes": "Still image only. Not an in-stock product listing.",
-      "local_file": "assets/film-interview.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original archive still retained locally. Corresponding full video is connected in the film registry.",
+      "local_file": "/media/images/film-interview-1080.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/film-interview-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/film-interview-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/film-interview-800.webp"
+        },
+        {
+          "width": 1080,
+          "src": "/media/images/film-interview-1080.webp"
+        }
+      ]
     },
     {
       "id": "film-car",
@@ -230,9 +714,15 @@
       "alt": "Small film preview showing a graphic backpack in a car",
       "kind": "video_poster",
       "source_page": "https://undrszn.com/",
-      "inspection": "visually reviewed",
-      "notes": "Only a very small thumbnail was exposed. Never upscale this into hero media.",
-      "local_file": "assets/film-car.jpg"
+      "inspection": "Fetched and decoded from Shopify CDN on 2026-10-14",
+      "notes": "Original archive still retained locally. Corresponding full video is connected in the film registry.",
+      "local_file": "/media/images/film-car-56.webp",
+      "variants": [
+        {
+          "width": 56,
+          "src": "/media/images/film-car-56.webp"
+        }
+      ]
     }
   ],
   "products": [

@@ -69,7 +69,7 @@ export default function NotesPage() {
                   <code>campaign-cut</code> — {films["campaign-cut"].title}
                 </td>
                 <td>{films["campaign-cut"].durationLabel}</td>
-                <td>Campaign, The Journey</td>
+                <td>Home, Campaign, The Journey</td>
                 <td>{filmIsReady(films["campaign-cut"]) ? "Live" : "Awaiting file"}</td>
               </tr>
               <tr>
@@ -77,16 +77,22 @@ export default function NotesPage() {
                   <code>bts-reel</code> — {films["bts-reel"].title}
                 </td>
                 <td>{films["bts-reel"].durationLabel}</td>
-                <td>Campaign, The Journey</td>
+                <td>Home, Campaign, The Journey</td>
                 <td>{filmIsReady(films["bts-reel"]) ? "Live" : "Awaiting file"}</td>
+              </tr>
+              <tr>
+                <td><code>interview</code> — {films.interview.title}</td>
+                <td>{films.interview.durationLabel}</td>
+                <td>The Journey</td>
+                <td>{filmIsReady(films.interview) ? "Live" : "Awaiting file"}</td>
               </tr>
               <tr>
                 <td>
                   <code>ambient-loop</code> — {films["ambient-loop"].title}
                 </td>
                 <td>{films["ambient-loop"].durationLabel}</td>
-                <td>Home hero (right panel)</td>
-                <td>{filmIsReady(films["ambient-loop"]) ? "Live" : "Awaiting file (still shown)"}</td>
+                <td>Available asset; photo hero retained</td>
+                <td>{filmIsReady(films["ambient-loop"]) ? "Ready, not mounted" : "Awaiting file"}</td>
               </tr>
             </tbody>
           </table>

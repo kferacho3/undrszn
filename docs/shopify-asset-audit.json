@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-10-14",
+  "source": "https://undrszn.com/collections/all",
+  "products": [
+    {
+      "handle": "deluxe-dirty-rodamn",
+      "shopify_image_count": 8,
+      "local_gallery_count": 8,
+      "missing_images": [],
+      "source_images": [
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/C40DB8E3-8E71-4D9E-BFE0-7C9A2FCDF9DE.png?v=1790636642",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/BBC57329-3537-4E2B-9157-6C597DAB21AF.png?v=1790636642",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2294.jpg?v=1791692720",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2296.jpg?v=1791692726",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2303.jpg?v=1791692735",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/5A9015FD-468F-4CE1-8CA4-D9A1D4C13E9C.jpg?v=1790637554",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2297.jpg?v=1791692878",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_1848_dd2e9e69-c4e4-40ac-b267-f7c9d90f6aae.jpg?v=1791131349"
+      ]
+    },
+    {
+      "handle": "dirty-rodman-hoodie",
+      "shopify_image_count": 6,
+      "local_gallery_count": 6,
+      "missing_images": [],
+      "source_images": [
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/Untitled_design_-_2.png?v=1790625330",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2329.jpg?v=1791719736",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2328.jpg?v=1791719725",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2332.jpg?v=1791719749",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2318.jpg?v=1791719914",
+        "https://cdn.shopify.com/s/files/1/0759/6320/3674/files/IMG_2333.jpg?v=1791721966"
+      ]
+    }
+  ],
+  "local_image_count": 23,
+  "responsive_file_count": 111,
+  "audited_pages": [
+    "https://undrszn.com/collections/all",
+    "https://undrszn.com/",
+    "https://undrszn.com/products/dirty-rodman-hoodie",
+    "https://undrszn.com/products/deluxe-dirty-rodamn",
+    "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
+    "https://undrszn.com/pages/about-undr-rated-szn"
+  ],
+  "shopify_videos": [
+    "https://undrszn.com/cdn/shop/videos/c/vp/2625399e72a24168bdce5e28a6e5c375/2625399e72a24168bdce5e28a6e5c375.HD-1080p-2.5Mbps-94277544.mp4?v=0",
+    "https://undrszn.com/cdn/shop/videos/c/vp/97c29db286c5401daea86e7b5362badf/97c29db286c5401daea86e7b5362badf.HD-1080p-7.2Mbps-94541455.mp4?v=0",
+    "https://undrszn.com/cdn/shop/videos/c/vp/b0b17a108f0e4f0f93812fb4e717ea15/b0b17a108f0e4f0f93812fb4e717ea15.HD-1080p-7.2Mbps-93893359.mp4?v=0",
+    "https://undrszn.com/cdn/shop/videos/c/vp/ce4e87e57e8c4b46aad1096b792045f9/ce4e87e57e8c4b46aad1096b792045f9.HD-1080p-7.2Mbps-93595930.mp4?v=0"
+  ],
+  "video_registry_ids": [
+    "journey",
+    "campaign-cut",
+    "bts-reel",
+    "interview"
+  ]
+}

@@ -17,7 +17,7 @@ interface MediaProps {
 }
 
 /**
- * Original brand photography served from the Shopify CDN with responsive widths.
+ * Original brand photography served from local optimized copies with responsive widths.
  * Fades in once decoded; if a source can't load, a labelled fallback keeps the
  * layout intact and still describes the frame.
  */

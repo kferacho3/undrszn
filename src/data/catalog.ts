@@ -1,8 +1,7 @@
 /**
  * Catalog + media library.
  *
- * Source of truth: ./asset-manifest.json (copied verbatim from the redesign package,
- * docs/redesign/prototype/asset-manifest.json). Prices and sizes are a dated snapshot
+ * Source of truth: ./asset-manifest.json, reconciled against the Shopify product feed. Prices and sizes are a dated snapshot
  * (2026-10-14) of the public store, NOT live inventory. In production these come from
  * Shopify product/variant objects.
  */
@@ -19,6 +18,7 @@ export interface Asset {
   inspection: string;
   notes: string;
   local_file: string;
+  variants?: { width: number; src: string }[];
 }
 
 export interface Product {
@@ -70,13 +70,17 @@ export function editionOf(p: Product): string {
 /** Two tiny film thumbnails must never be enlarged (see manifest notes). */
 export const TINY_ASSETS = new Set(["film-car", "film-arrival"]);
 
-/** Shopify CDN supports on-the-fly width transforms via the `width` query param. */
+/** Prefer local responsive copies; retain Shopify URLs as a fallback for new assets. */
 export function assetUrl(asset: Asset, width = 1200): string {
+  if (asset.variants?.length) {
+    return (asset.variants.find((v) => v.width >= width) ?? asset.variants[asset.variants.length - 1]).src;
+  }
   if (TINY_ASSETS.has(asset.id)) return asset.original_url;
   return asset.original_url.replace(/([?&])width=\d+/, `$1width=${width}`);
 }
 
 export function assetSrcSet(asset: Asset, widths = [480, 800, 1200, 1800]): string | undefined {
+  if (asset.variants?.length) return asset.variants.map((v) => `${v.src} ${v.width}w`).join(", ");
   if (TINY_ASSETS.has(asset.id)) return undefined;
   return widths.map((w) => `${assetUrl(asset, w)} ${w}w`).join(", ");
 }

@@ -17,7 +17,7 @@
  * GitHub rejects files larger than 100 MB.
  */
 
-export type FilmId = "journey" | "campaign-cut" | "bts-reel" | "ambient-loop";
+export type FilmId = "journey" | "campaign-cut" | "bts-reel" | "interview" | "ambient-loop";
 
 export interface FilmSource {
   src: string;
@@ -112,6 +112,22 @@ export const films: Record<FilmId, Film> = {
     sources: [
       { src: "/videos/portrait-01-hd.mp4", type: "video/mp4", height: 1080 },
       { src: "/videos/portrait-01-sd.mp4", type: "video/mp4", height: 720 },
+    ],
+    captions: [],
+  },
+  interview: {
+    id: "interview",
+    kicker: "From the brand archive",
+    title: "UNDR — Interview",
+    description: "The original interview clip from the UNDR.RATED.SZN Shopify homepage.",
+    durationLabel: "01:24",
+    aspect: "9 / 16",
+    posterAsset: "film-interview",
+    posterAlt: "A person outdoors wearing a graphic shirt",
+    posterSrc: "/videos/interview-poster.jpg",
+    sources: [
+      { src: "/videos/interview-hd.mp4", type: "video/mp4", height: 1080 },
+      { src: "/videos/interview-sd.mp4", type: "video/mp4", height: 720 },
     ],
     captions: [],
   },
