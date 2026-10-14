@@ -1,0 +1,605 @@
+{
+  "results": [
+    {
+      "path": "/",
+      "viewport": 1440,
+      "title": "Home \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/collections/all",
+      "viewport": 1440,
+      "title": "The collection \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/products/dirty-rodman-hoodie",
+      "viewport": 1440,
+      "title": "Dirty Rodman Hoodie \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/products/deluxe-dirty-rodamn",
+      "viewport": 1440,
+      "title": "Deluxe Dirty Rodman \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/behind-the-scenes-dirty-rodman",
+      "viewport": 1440,
+      "title": "The campaign \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/about-undr-rated-szn",
+      "viewport": 1440,
+      "title": "Our story \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/lookbook",
+      "viewport": 1440,
+      "title": "Lookbook \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/community",
+      "viewport": 1440,
+      "title": "Join the SZN \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/brand-ambassador-application",
+      "viewport": 1440,
+      "title": "Brand ambassador \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/model-application",
+      "viewport": 1440,
+      "title": "Model \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/sales-representative-application",
+      "viewport": 1440,
+      "title": "Sales representative \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/content-creator-application",
+      "viewport": 1440,
+      "title": "Content creator \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/contact",
+      "viewport": 1440,
+      "title": "Contact \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/size-guide",
+      "viewport": 1440,
+      "title": "Sizing & fit \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/pages/help",
+      "viewport": 1440,
+      "title": "Help \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/policies/shipping-policy",
+      "viewport": 1440,
+      "title": "Shipping \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/policies/refund-policy",
+      "viewport": 1440,
+      "title": "Exchanges \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/policies/privacy-policy",
+      "viewport": 1440,
+      "title": "Privacy \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/policies/terms-of-service",
+      "viewport": 1440,
+      "title": "Terms of service \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/policies/contact-information",
+      "viewport": 1440,
+      "title": "Contact information \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/search",
+      "viewport": 1440,
+      "title": "Search \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/cart",
+      "viewport": 1440,
+      "title": "Your bag \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/account",
+      "viewport": 1440,
+      "title": "Your account \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/404",
+      "viewport": 1440,
+      "title": "Page not found \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/preview-notes",
+      "viewport": 1440,
+      "title": "Preview notes \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/",
+      "viewport": 390,
+      "title": "Home \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/collections/all",
+      "viewport": 390,
+      "title": "The collection \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/products/dirty-rodman-hoodie",
+      "viewport": 390,
+      "title": "Dirty Rodman Hoodie \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/products/deluxe-dirty-rodamn",
+      "viewport": 390,
+      "title": "Deluxe Dirty Rodman \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/behind-the-scenes-dirty-rodman",
+      "viewport": 390,
+      "title": "The campaign \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/about-undr-rated-szn",
+      "viewport": 390,
+      "title": "Our story \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/lookbook",
+      "viewport": 390,
+      "title": "Lookbook \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/community",
+      "viewport": 390,
+      "title": "Join the SZN \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/brand-ambassador-application",
+      "viewport": 390,
+      "title": "Brand ambassador \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/model-application",
+      "viewport": 390,
+      "title": "Model \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/sales-representative-application",
+      "viewport": 390,
+      "title": "Sales representative \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/content-creator-application",
+      "viewport": 390,
+      "title": "Content creator \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/contact",
+      "viewport": 390,
+      "title": "Contact \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/size-guide",
+      "viewport": 390,
+      "title": "Sizing & fit \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/pages/help",
+      "viewport": 390,
+      "title": "Help \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/policies/shipping-policy",
+      "viewport": 390,
+      "title": "Shipping \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/policies/refund-policy",
+      "viewport": 390,
+      "title": "Exchanges \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/policies/privacy-policy",
+      "viewport": 390,
+      "title": "Privacy \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/policies/terms-of-service",
+      "viewport": 390,
+      "title": "Terms of service \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/policies/contact-information",
+      "viewport": 390,
+      "title": "Contact information \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/search",
+      "viewport": 390,
+      "title": "Search \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/cart",
+      "viewport": 390,
+      "title": "Your bag \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/account",
+      "viewport": 390,
+      "title": "Your account \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/404",
+      "viewport": 390,
+      "title": "Page not found \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/preview-notes",
+      "viewport": 390,
+      "title": "Preview notes \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/",
+      "viewport": 320,
+      "title": "Home \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/collections/all",
+      "viewport": 320,
+      "title": "The collection \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/products/dirty-rodman-hoodie",
+      "viewport": 320,
+      "title": "Dirty Rodman Hoodie \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/products/deluxe-dirty-rodamn",
+      "viewport": 320,
+      "title": "Deluxe Dirty Rodman \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/behind-the-scenes-dirty-rodman",
+      "viewport": 320,
+      "title": "The campaign \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/about-undr-rated-szn",
+      "viewport": 320,
+      "title": "Our story \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/lookbook",
+      "viewport": 320,
+      "title": "Lookbook \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/community",
+      "viewport": 320,
+      "title": "Join the SZN \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/brand-ambassador-application",
+      "viewport": 320,
+      "title": "Brand ambassador \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 321
+    },
+    {
+      "path": "/pages/model-application",
+      "viewport": 320,
+      "title": "Model \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 321
+    },
+    {
+      "path": "/pages/sales-representative-application",
+      "viewport": 320,
+      "title": "Sales representative \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 321
+    },
+    {
+      "path": "/pages/content-creator-application",
+      "viewport": 320,
+      "title": "Content creator \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 321
+    },
+    {
+      "path": "/pages/contact",
+      "viewport": 320,
+      "title": "Contact \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/size-guide",
+      "viewport": 320,
+      "title": "Sizing & fit \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/pages/help",
+      "viewport": 320,
+      "title": "Help \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/policies/shipping-policy",
+      "viewport": 320,
+      "title": "Shipping \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/policies/refund-policy",
+      "viewport": 320,
+      "title": "Exchanges \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/policies/privacy-policy",
+      "viewport": 320,
+      "title": "Privacy \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/policies/terms-of-service",
+      "viewport": 320,
+      "title": "Terms of service \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/policies/contact-information",
+      "viewport": 320,
+      "title": "Contact information \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/search",
+      "viewport": 320,
+      "title": "Search \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/cart",
+      "viewport": 320,
+      "title": "Your bag \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/account",
+      "viewport": 320,
+      "title": "Your account \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/404",
+      "viewport": 320,
+      "title": "Page not found \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/preview-notes",
+      "viewport": 320,
+      "title": "Preview notes \u2014 UNDR.RATED.SZN | Design Preview",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320
+    }
+  ],
+  "errors": []
+}

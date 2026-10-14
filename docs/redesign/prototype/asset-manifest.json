@@ -1,0 +1,314 @@
+{
+  "audit_date": "2026-10-14",
+  "mode": "design-prototype",
+  "media_mode": "remote-originals",
+  "media_count": 23,
+  "assets": [
+    {
+      "id": "black-front",
+      "original_url": "https://undrszn.com/cdn/shop/files/Untitled_design_-_2.png?v=1790625330&width=3840",
+      "alt": "Black Dirty Rodman hoodie, front product view",
+      "kind": "packshot",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "visually reviewed",
+      "notes": "Excess white canvas: normalize the product scale without changing artwork.",
+      "local_file": "assets/black-front.png"
+    },
+    {
+      "id": "black-portrait",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2329.jpg?v=1791719736&width=3840",
+      "alt": "Front portrait showing the black hoodie and its multicolor chest graphic",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/black-portrait.jpg"
+    },
+    {
+      "id": "black-frame-02",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2328.jpg?v=1791719725&width=3840",
+      "alt": "Additional black Dirty Rodman product photograph",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "URL discovered; pixels not verified",
+      "notes": "Web image request timed out; verify the original during asset export.",
+      "local_file": "assets/black-frame-02.jpg"
+    },
+    {
+      "id": "black-frame-03",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2332.jpg?v=1791719749&width=3840",
+      "alt": "Additional black Dirty Rodman product photograph",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "URL discovered; pixels not verified",
+      "notes": "Web image request timed out; verify the original during asset export.",
+      "local_file": "assets/black-frame-03.jpg"
+    },
+    {
+      "id": "black-full-look",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2318.jpg?v=1791719914&width=3840",
+      "alt": "Full-length styling photograph of the black hoodie with bright green shorts",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/black-full-look.jpg"
+    },
+    {
+      "id": "black-seated",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2333.jpg?v=1791721966&width=3840",
+      "alt": "Seated styling photograph of the black hoodie against a muted red studio backdrop",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/black-seated.jpg"
+    },
+    {
+      "id": "cream-back-product",
+      "original_url": "https://undrszn.com/cdn/shop/files/BBC57329-3537-4E2B-9157-6C597DAB21AF.png?v=1790636642&width=3840",
+      "alt": "Cream hoodie back product view showing the hood and large back lettering",
+      "kind": "packshot",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "Inspect edge quality against both light and dark backgrounds.",
+      "local_file": "assets/cream-back-product.png"
+    },
+    {
+      "id": "cream-front",
+      "original_url": "https://undrszn.com/cdn/shop/files/C40DB8E3-8E71-4D9E-BFE0-7C9A2FCDF9DE.png?v=1790636642&width=3840",
+      "alt": "Cream Deluxe Dirty Rodman hoodie, front product view",
+      "kind": "packshot",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "Excess white canvas: normalize the product scale without changing artwork.",
+      "local_file": "assets/cream-front.png"
+    },
+    {
+      "id": "cream-hood",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2294.jpg?v=1791692720&width=3840",
+      "alt": "Cream hoodie worn with the hood up, showing the UNDR hood lettering",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/cream-hood.jpg"
+    },
+    {
+      "id": "cream-portrait",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2296.jpg?v=1791692726&width=3840",
+      "alt": "Front portrait showing the cream hoodie and its orange and red chest artwork",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/cream-portrait.jpg"
+    },
+    {
+      "id": "cream-full-look",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2303.jpg?v=1791692735&width=3840",
+      "alt": "Full-length styling photograph of the cream hoodie with denim shorts",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/cream-full-look.jpg"
+    },
+    {
+      "id": "cream-back-campaign",
+      "original_url": "https://undrszn.com/cdn/shop/files/5A9015FD-468F-4CE1-8CA4-D9A1D4C13E9C.jpg?v=1790637554&width=3840",
+      "alt": "Seated rear view of the cream hoodie in a red-lit studio",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "Also used on the current homepage. Preserve the printed garment text exactly.",
+      "local_file": "assets/cream-back-campaign.jpg"
+    },
+    {
+      "id": "cream-side",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_2297.jpg?v=1791692878&width=3840",
+      "alt": "Three-quarter portrait showing the cream hoodie chest graphic",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/cream-side.jpg"
+    },
+    {
+      "id": "cream-back-detail",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_1848_dd2e9e69-c4e4-40ac-b267-f7c9d90f6aae.jpg?v=1791131349&width=3840",
+      "alt": "Closer rear view of the cream hoodie, hood lettering and back message",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/cream-back-detail.jpg"
+    },
+    {
+      "id": "bts-campaign",
+      "original_url": "https://undrszn.com/cdn/shop/files/C379B512-1405-46D6-86CD-AF4550BFCB6C.png?v=1791692238&width=3840",
+      "alt": "Campaign portrait of a young person wearing the black Dirty Rodman hoodie",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
+      "inspection": "visually reviewed",
+      "notes": "Confirm campaign/model permissions before reuse in paid advertising.",
+      "local_file": "assets/bts-campaign.png"
+    },
+    {
+      "id": "bts-pair",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_5155_ad86706f-52b3-455a-8ce8-6f02d9905d3f.jpg?v=1790936567&width=1200",
+      "alt": "Studio photograph showing the black hoodie front and cream hoodie back together",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/bts-pair.jpg"
+    },
+    {
+      "id": "bts-black",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_5185.jpg?v=1791692167&width=1200",
+      "alt": "Behind-the-scenes portrait of the black hoodie in red studio lighting",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
+      "inspection": "visually reviewed",
+      "notes": "",
+      "local_file": "assets/bts-black.jpg"
+    },
+    {
+      "id": "bts-studio",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_4854.heic?v=1791053875&width=1200",
+      "alt": "Behind-the-scenes cream hoodie photograph with studio lighting equipment visible",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/pages/behind-the-scenes-dirty-rodman",
+      "inspection": "visually reviewed",
+      "notes": "HEIC source: export or request a verified browser-compatible JPEG/WebP derivative.",
+      "local_file": "assets/bts-studio.jpg"
+    },
+    {
+      "id": "brand-riders",
+      "original_url": "https://undrszn.com/cdn/shop/files/IMG_0484_2.jpg?v=1788651313&width=3840",
+      "alt": "UNDR community photograph with branded jackets and dirt bikes",
+      "kind": "photograph",
+      "source_page": "https://undrszn.com/pages/about-undr-rated-szn",
+      "inspection": "visually reviewed",
+      "notes": "Archive/story media. The jackets are not among the two products currently listed; do not imply they can be purchased.",
+      "local_file": "assets/brand-riders.jpg"
+    },
+    {
+      "id": "film-arrival",
+      "original_url": "https://undrszn.com/cdn/shop/files/preview_images/97c29db286c5401daea86e7b5362badf.thumbnail.0000000000_small.jpg?v=1789524720",
+      "alt": "Opening film preview from the existing homepage",
+      "kind": "video_poster",
+      "source_page": "https://undrszn.com/",
+      "inspection": "URL discovered; pixels not verified",
+      "notes": "Discovered thumbnail request failed. Full film source is unresolved; do not invent an MP4 URL.",
+      "local_file": "assets/film-arrival.jpg"
+    },
+    {
+      "id": "film-gallery",
+      "original_url": "https://undrszn.com/cdn/shop/files/preview_images/ce4e87e57e8c4b46aad1096b792045f9.thumbnail.0000000000.jpg?v=1788638952&width=3840",
+      "alt": "Film still of a person approaching a storefront wearing a graphic backpack",
+      "kind": "video_poster",
+      "source_page": "https://undrszn.com/",
+      "inspection": "visually reviewed",
+      "notes": "Still image only. Obtain the Shopify-hosted video object/source before implementing playback.",
+      "local_file": "assets/film-gallery.jpg"
+    },
+    {
+      "id": "film-interview",
+      "original_url": "https://undrszn.com/cdn/shop/files/preview_images/b0b17a108f0e4f0f93812fb4e717ea15.thumbnail.0000000000.jpg?v=1788946788&width=3840",
+      "alt": "Film still of a person outdoors wearing a graphic shirt",
+      "kind": "video_poster",
+      "source_page": "https://undrszn.com/",
+      "inspection": "visually reviewed",
+      "notes": "Still image only. Not an in-stock product listing.",
+      "local_file": "assets/film-interview.jpg"
+    },
+    {
+      "id": "film-car",
+      "original_url": "https://undrszn.com/cdn/shop/files/preview_images/2625399e72a24168bdce5e28a6e5c375.thumbnail.0000000000_small.jpg?v=1789314077",
+      "alt": "Small film preview showing a graphic backpack in a car",
+      "kind": "video_poster",
+      "source_page": "https://undrszn.com/",
+      "inspection": "visually reviewed",
+      "notes": "Only a very small thumbnail was exposed. Never upscale this into hero media.",
+      "local_file": "assets/film-car.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "black",
+      "handle": "dirty-rodman-hoodie",
+      "name": "Dirty Rodman Hoodie",
+      "color": "Black",
+      "price": 8999,
+      "compare_at": 10000,
+      "lead": "black-portrait",
+      "flat": "black-front",
+      "images": [
+        "black-front",
+        "black-portrait",
+        "black-frame-02",
+        "black-frame-03",
+        "black-full-look",
+        "black-seated"
+      ],
+      "description": "A heavyweight statement, led by the signature Dirty Rodman graphic.",
+      "facts": [
+        "420 GSM French terry",
+        "Oversized fit",
+        "Ribbed cuffs and waistband"
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "source": "https://undrszn.com/products/dirty-rodman-hoodie",
+      "notes": "Size labels are normalized for this interface preview only. The live page also exposes 2XS. Actual Shopify variant IDs and availability must be verified before launch."
+    },
+    {
+      "id": "cream",
+      "handle": "deluxe-dirty-rodamn",
+      "name": "Deluxe Dirty Rodman",
+      "color": "Cream",
+      "price": 10999,
+      "compare_at": null,
+      "lead": "cream-portrait",
+      "flat": "cream-front",
+      "images": [
+        "cream-portrait",
+        "cream-front",
+        "cream-back-product",
+        "cream-hood",
+        "cream-full-look",
+        "cream-back-campaign",
+        "cream-side",
+        "cream-back-detail"
+      ],
+      "description": "The Dirty Rodman artwork in cream, with a message that carries through to the back.",
+      "facts": [
+        "Front and back artwork",
+        "UNDR hood detailing",
+        "Cream Deluxe colorway"
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "source": "https://undrszn.com/products/deluxe-dirty-rodamn",
+      "notes": "The live description conflicts on 400 vs 420 GSM. No exact weight or measured fit is asserted in this preview. The page describes a 35-piece edition, not remaining stock."
+    }
+  ],
+  "public_contact_email": "undrsuccesss@gmail.com",
+  "contact_source": "https://undrszn.com/policies/privacy-policy"
+}

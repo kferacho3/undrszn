@@ -1,0 +1,88 @@
+/* ==========================================================================
+   UNDR.RATED.SZN — The Resilience Issue · design tokens
+   Dark is the default. Light ("paper") is the alternate, toggled via
+   <html data-theme="light">. Values follow the blueprint's palette, re-tuned
+   so every text pairing clears WCAG AA on its intended surface.
+   ========================================================================== */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* surfaces */
+  --bg: #0b0b0a;
+  --bg-elev: #121211;
+  --bg-raise: #1a1a18;
+  --bg-sunk: #070707;
+  --paper: #ece9e1;            /* studio tile behind packshots */
+  --scrim: rgba(7, 7, 6, 0.72);
+
+  /* ink */
+  --ink: #f2efe7;
+  --ink-2: #cdc9be;
+  --muted: #8f8a80;
+  --on-paper: #151515;
+
+  /* signature red */
+  --red: #c8341f;              /* fills (buttons) — ink on red ≥ 4.9:1 */
+  --red-hover: #dd3d26;
+  --red-ink: #f0583c;          /* red text on dark surfaces */
+  --red-glow: rgba(240, 88, 60, 0.18);
+
+  /* structure */
+  --rule: rgba(242, 239, 231, 0.12);
+  --rule-strong: rgba(242, 239, 231, 0.28);
+  --focus: #f0583c;
+
+  /* grain + glass */
+  --grain-opacity: 0.07;
+  --header-bg: rgba(11, 11, 10, 0.78);
+
+  /* type */
+  --font-display: var(--font-anton), "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  --font-body: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* spacing rhythm 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px;
+  --s6: 32px; --s7: 48px; --s8: 64px; --s9: 96px; --s10: 144px;
+  --gutter: clamp(16px, 3.2vw, 48px);
+  --max: 1680px;
+  --header-h: 72px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ease-film: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 180ms;
+  --t-med: 320ms;
+  --t-slow: 900ms;
+
+  --radius: 2px;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f1eb;
+  --bg-elev: #ebe8e0;
+  --bg-raise: #e3e0d7;
+  --bg-sunk: #e8e5dd;
+  --paper: #e8e5dd;
+  --scrim: rgba(21, 21, 21, 0.55);
+
+  --ink: #151515;
+  --ink-2: #33322f;
+  --muted: #65635e;
+  --on-paper: #151515;
+
+  --red: #be301e;
+  --red-hover: #a42917;
+  --red-ink: #be301e;
+  --red-glow: rgba(190, 48, 30, 0.12);
+
+  --rule: #d5d2ca;
+  --rule-strong: #a9a59b;
+  --focus: #be301e;
+
+  --grain-opacity: 0.045;
+  --header-bg: rgba(243, 241, 235, 0.84);
+}
