@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HoverFilmCard } from "@/components/film/HoverFilmCard";
 import { FilmPlayer } from "@/components/film/FilmPlayer";
 import { Media } from "@/components/Media";
 import { Newsletter } from "@/components/Newsletter";
@@ -90,7 +91,7 @@ export default function HomePage() {
         </div>
         {[films["campaign-cut"], films["bts-reel"]].map((film, index) => (
           <article className="campaign-shorts__film" key={film.id}>
-            <FilmPlayer film={film} variant="card" showMeta={false} />
+            <HoverFilmCard film={film} previewSrc={index === 0 ? "/videos/portrait-02-loop.mp4" : "/videos/portrait-01-loop.mp4"} />
             <div className="campaign-shorts__caption">
               <h3 className="film-card__title">{index === 0 ? "The Street" : "The Ride"}</h3>
               <span className="micro">0{index + 1} / {film.durationLabel}</span>

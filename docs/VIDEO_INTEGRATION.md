@@ -146,3 +146,11 @@ The homepage also features both portrait campaign films in an “Off the hanger.
 Into the street.” section below the acronym strip. They use the existing
 click-to-play player with audio controls, HD/SD selection, and coordinated
 playback. The photo hero stays intact.
+
+### Homepage hover previews
+
+The two campaign cards use `HoverFilmCard`: a silent SD loop loads only on
+mouse hover, fades over the poster, and pauses on leave, offscreen, tab hiding,
+or another film starting. Clicking the original play button switches to the
+full player with sound and controls. Touch remains tap-to-play; reduced-motion
+and Save-Data disable hover previews. The photo hero remains unchanged.
