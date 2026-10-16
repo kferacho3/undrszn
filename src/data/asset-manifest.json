@@ -2,7 +2,7 @@
   "audit_date": "2026-10-14",
   "mode": "design-prototype",
   "media_mode": "local-optimized",
-  "media_count": 23,
+  "media_count": 24,
   "assets": [
     {
       "id": "black-front",
@@ -721,6 +721,34 @@
         {
           "width": 56,
           "src": "/media/images/film-car-56.webp"
+        }
+      ]
+    },
+    {
+      "id": "campus-celebration",
+      "original_url": "/media/images/campus-celebration-950.webp",
+      "alt": "Campus campaign artwork featuring the black and cream Dirty Rodman hoodies with a chimpanzee and a cheering crowd",
+      "kind": "photograph",
+      "source_page": "/pages/behind-the-scenes-dirty-rodman",
+      "inspection": "Owner-supplied campaign artwork, optimized on 2026-10-16",
+      "notes": "Cinematic Campus Trio Celebration; retain the complete portrait composition.",
+      "local_file": "/media/images/campus-celebration-950.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/campus-celebration-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/campus-celebration-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/campus-celebration-800.webp"
+        },
+        {
+          "width": 950,
+          "src": "/media/images/campus-celebration-950.webp"
         }
       ]
     }

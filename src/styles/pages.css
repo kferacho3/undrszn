@@ -213,3 +213,7 @@
 /* Grid children must be allowed to shrink so scrollers (tables, tab rails) don't widen the page. */
 .legal > *, .notes > *, .form-layout > *, .chapter > * { min-width: 0; }
 .notes code, .legal__body code { overflow-wrap: anywhere; }
+
+/* Preserve the complete owner-supplied campaign artwork at every breakpoint. */
+.editorial-hero .campaign-artwork { height: auto; min-height: 0; align-self: center; }
+.editorial-hero .campaign-artwork img { object-fit: contain; }

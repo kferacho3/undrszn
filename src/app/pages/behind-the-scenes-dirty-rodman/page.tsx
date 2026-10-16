@@ -41,7 +41,7 @@ export default function CampaignPage() {
             <dd>September 27, 2026</dd>
           </dl>
         </div>
-        <Media id="bts-pair" ratio="auto" priority sizes="(max-width: 900px) 100vw, 56vw" width={1800} />
+        <Media id="campus-celebration" className="campaign-artwork" ratio="950 / 1655" priority sizes="(max-width: 900px) 100vw, 56vw" width={950} />
       </section>
 
       <section className="container section" id="campaign-films">
@@ -77,10 +77,10 @@ export default function CampaignPage() {
           </figure>
           <figure className="reveal" style={{ "--delay": "90ms" } as React.CSSProperties}>
             <Link className="zoomable" href="/products/deluxe-dirty-rodamn" style={{ display: "block" }}>
-              <Media id="bts-studio" ratio="4 / 5" />
+              <Media id="bts-pair" ratio="4 / 5" />
             </Link>
             <figcaption className="caption-tag" style={{ marginTop: 12, display: "block" }}>
-              Cream / Deluxe — shop this piece ↗
+              Black & Cream — the original studio frame ↗
             </figcaption>
           </figure>
         </div>
