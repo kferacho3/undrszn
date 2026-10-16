@@ -89,11 +89,11 @@ export default function HomePage() {
             Explore the campaign ↗
           </Link>
         </div>
-        {[films["campaign-cut"], films["bts-reel"]].map((film, index) => (
+        {[films["bts-reel"], films["campaign-cut"]].map((film, index) => (
           <article className="campaign-shorts__film" key={film.id}>
-            <HoverFilmCard film={film} previewSrc={index === 0 ? "/videos/portrait-02-loop.mp4" : "/videos/portrait-01-loop.mp4"} />
+            <HoverFilmCard film={film} previewSrc={film.id === "campaign-cut" ? "/videos/portrait-02-loop.mp4" : "/videos/portrait-01-loop.mp4"} />
             <div className="campaign-shorts__caption">
-              <h3 className="film-card__title">{index === 0 ? "The Street" : "The Ride"}</h3>
+              <h3 className="film-card__title">{film.id === "campaign-cut" ? "The Street" : "The Ride"}</h3>
               <span className="micro">0{index + 1} / {film.durationLabel}</span>
             </div>
           </article>
