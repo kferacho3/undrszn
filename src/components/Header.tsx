@@ -12,6 +12,7 @@ export function Header() {
   const pathname = usePathname();
   const { count, openDialog, bagPulse } = useUI();
   const [bump, setBump] = useState(false);
+  const isMembersPage = pathname === "/pages/members-only";
 
   useEffect(() => {
     if (!bagPulse) return;
@@ -25,16 +26,16 @@ export function Header() {
 
   return (
     <>
-      <div className="announce">
-        <span className="dot" aria-hidden="true" />
+      <div className={`announce${isMembersPage ? " announce--members" : ""}`}>
+        {!isMembersPage && <span className="dot" aria-hidden="true" />}
         <span>
-          {site.name} — {site.collection}
+          {isMembersPage ? "Members Only — A private viewing" : `${site.name} — ${site.collection}`}
         </span>
         <span className="hide-sm" aria-hidden="true">
           ·
         </span>
-        <Link className="hide-sm" href="/pages/journey">
-          The Journey — a film
+        <Link className="hide-sm" href={isMembersPage ? "/collections/all" : "/pages/journey"}>
+          {isMembersPage ? "Shop the current collection" : "The Journey — a film"}
         </Link>
       </div>
       <header className="site-header">

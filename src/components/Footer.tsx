@@ -28,6 +28,7 @@ export function Footer() {
               <Link href="/pages/about-undr-rated-szn">Our story</Link>
               <Link href="/pages/behind-the-scenes-dirty-rodman">Behind the scenes</Link>
               <Link href="/pages/community">Join the SZN</Link>
+              <Link href="/pages/members-only">Members Only</Link>
               <a href={site.instagram} target="_blank" rel="noopener noreferrer">
                 Instagram ↗
               </a>

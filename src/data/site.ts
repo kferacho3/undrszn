@@ -18,6 +18,7 @@ export const primaryNav = [
   { href: "/pages/behind-the-scenes-dirty-rodman", label: "The Campaign" },
   { href: "/pages/journey", label: "The Journey" },
   { href: "/pages/about-undr-rated-szn", label: "Our Story" },
+  { href: "/pages/members-only", label: "Members" },
 ];
 
 export const menuNav = [
@@ -27,6 +28,7 @@ export const menuNav = [
   { href: "/pages/lookbook", label: "Lookbook" },
   { href: "/pages/about-undr-rated-szn", label: "Our story" },
   { href: "/pages/community", label: "Join the SZN" },
+  { href: "/pages/members-only", label: "Members Only" },
   { href: "/pages/contact", label: "Contact" },
   { href: "/search", label: "Search" },
   { href: "/account", label: "Account" },

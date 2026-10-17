@@ -17,6 +17,7 @@ const routes = [
   "/pages/lookbook",
   "/pages/about-undr-rated-szn",
   "/pages/community",
+  "/pages/members-only",
   ...roles.map(applicationPath),
   "/pages/contact",
   "/pages/size-guide",
@@ -38,6 +39,14 @@ export default function NotesPage() {
           Every page and route, navigation, both product pages, photograph switching and enlargement, collection filters, on-body /
           product photograph modes, lookbook filtering, product search, size selection, a persistent local bag with quantity changes and
           removal, accordions, mobile navigation, a dark/light switch, the film player and accessible form validation.
+        </p>
+
+        <h2>Members Only collection preview</h2>
+        <p>
+          The members page presents 13 supplied concept images with responsive local media, category filtering, a keyboard-accessible
+          image viewer and small-goods colour studies. It is a public preview, not a restricted membership area. The Join the SZN
+          action leads to the main brand store; this page does not collect email addresses or grant membership. Product names,
+          prices, materials, availability and membership terms remain unconfirmed.
         </p>
 
         <h2>Films</h2>

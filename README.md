@@ -33,6 +33,16 @@ Requires Node 20.9+.
 | `docs/VIDEO_INTEGRATION.md` | How to compress, register and host the films |
 | `docs/redesign/` | The original redesign package: plan, blueprint, standalone preview, prototype source, QA results |
 
+## Members Only
+
+`/pages/members-only` presents an editorial preview of the supplied future-collection imagery.
+It includes 13 images, a filterable preview gallery, keyboard-accessible image enlargement,
+small-goods colour studies and a direct link to the main brand store for updates.
+
+This is a public collection preview. It does not authenticate members, accept applications,
+collect email addresses, promise benefits or sell the concept pieces. See
+[`docs/MEMBERS_ONLY.md`](docs/MEMBERS_ONLY.md) for the page structure, media mapping, and launch notes.
+
 ## Films
 
 Each film already has a designed slot. Until a film is registered, the slot shows an

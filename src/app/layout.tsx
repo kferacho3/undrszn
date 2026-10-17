@@ -14,6 +14,8 @@ import "@/styles/home.css";
 import "@/styles/commerce.css";
 import "@/styles/pages.css";
 import "@/styles/film.css";
+import "@/styles/members.css";
+import "@/styles/members-gallery.css";
 
 // Self-hosted OFL fonts (via @fontsource packages) so builds never depend on a network fetch.
 const anton = localFont({

@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/pages/about-undr-rated-szn",
     "/pages/lookbook",
     "/pages/community",
+    "/pages/members-only",
     ...roles.map(applicationPath),
     "/pages/contact",
     "/pages/size-guide",

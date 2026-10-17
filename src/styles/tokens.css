@@ -58,6 +58,20 @@
   --t-slow: 900ms;
 
   --radius: 2px;
+
+  /* Members Only is an editorial room with its own fixed paper / espresso surfaces. */
+  --members-paper: #f0ece3;
+  --members-paper-ink: #28231e;
+  --members-paper-muted: #686057;
+  --members-paper-rule: rgba(40, 35, 30, 0.2);
+  --members-oxblood: #652b31;
+  --members-white: #fff;
+  --members-night: #171512;
+  --members-cream: #f3eee4;
+  --members-soft: #c8bfae;
+  --members-dark-rule: rgba(243, 238, 228, 0.22);
+  --members-cognac: #93532b;
+  --members-scarlet: #a92022;
 }
 
 :root[data-theme="light"] {
