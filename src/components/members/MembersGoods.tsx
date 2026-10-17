@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { getMemberImage } from "@/data/members";
-import { MembersImage } from "./MembersImage";
+import { MembersStudy } from "./MembersStudy";
 
 const studies = [
   { id: "cognac-wallet", color: "Cognac", label: "The warm signature.", className: "cognac" },
@@ -17,7 +17,7 @@ export function MembersGoods() {
   return (
     <div className="members-goods__study">
       <div className="members-goods__picture">
-        <MembersImage key={study.id} image={getMemberImage(study.id)} sizes="(max-width: 760px) 100vw, 48vw" />
+        <MembersStudy key={study.id} image={getMemberImage(study.id)} sizes="(max-width: 760px) 100vw, 48vw" />
         <span className="members-goods__plate" aria-hidden="true">UNDRSZN · SMALL GOODS</span>
       </div>
       <div className="members-goods__controls">

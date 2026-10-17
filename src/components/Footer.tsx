@@ -58,7 +58,7 @@ export function Footer() {
       </footer>
       {site.previewMode && (
         <div className="preview-band">
-          Preview build · Imagery loads from the brand’s store · No live orders or submissions.{" "}
+          Preview build · No live orders or submissions.{" "}
           <Link href="/preview-notes">What is connected?</Link>
         </div>
       )}

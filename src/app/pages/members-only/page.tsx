@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import { MembersGallery } from "@/components/members/MembersGallery";
 import { MembersGoods } from "@/components/members/MembersGoods";
-import { MembersImage } from "@/components/members/MembersImage";
+import { MembersStudy } from "@/components/members/MembersStudy";
 import { getMemberImage } from "@/data/members";
 
 const cormorant = localFont({
@@ -37,14 +37,16 @@ export default function MembersOnlyPage() {
         <div className="members-hero__folio members-label"><span>UndrSzn / Members Only</span><span>A private viewing</span></div>
         <div className="members-hero__layout">
           <div className="members-hero__copy">
-            <p className="members-label members-hero__eyebrow">A world within the SZN</p>
-            <h1 id="members-title">Members<br /><em>only.</em></h1>
+            <div className="members-hero__heading">
+              <p className="members-label members-hero__eyebrow">A world within the SZN</p>
+              <h1 id="members-title">Members<br /><em>only.</em></h1>
+            </div>
             <p className="members-hero__intro">Some things deserve<br />a closer look.</p>
             <a className="members-link members-link--cream" href="#members-collection">Explore the preview <Arrow /></a>
             <div className="members-hero__note"><span className="members-hero__line" aria-hidden="true" /><p>A quieter expression of UndrSzn.<br />A first look, shared with you.</p></div>
           </div>
           <figure className="members-hero__portrait">
-            <MembersImage image={getMemberImage("reading-room-ivory")} priority sizes="(max-width: 760px) 100vw, 57vw" />
+            <MembersStudy image={getMemberImage("reading-room-ivory")} priority sizes="(max-width: 760px) 90vw, (min-width: 1800px) 620px, (min-width: 1200px) 562px, 45vw" />
             <figcaption><span>In the reading room</span><span>01 / 13</span></figcaption>
           </figure>
           <div className="members-hero__vertical" aria-hidden="true">Uncomfortable nights develop resilience</div>
@@ -66,14 +68,14 @@ export default function MembersOnlyPage() {
         </div>
         <div className="members-intro__text"><p>From the weight of a silhouette to the curve of a signature. A closer look at the ideas taking shape within UndrSzn.</p><p className="members-fine">Collection concepts shown for preview. Product details will be shared as they are confirmed.</p></div>
         <div className="members-editorial">
-          <figure className="members-editorial__reading"><MembersImage image={getMemberImage("reading-room-noir")} sizes="(max-width: 760px) 92vw, 42vw" /><figcaption><span>The reading room</span><span>Noir / study 02</span></figcaption></figure>
-          <div className="members-editorial__aside"><span className="members-label">Unhurried. Unmistakable.</span><p>Made of<br /><em>moments.</em></p><div className="members-editorial__portraits"><figure><MembersImage image={getMemberImage("ivory-portrait")} sizes="(max-width: 760px) 48vw, 24vw" /><figcaption>Another point of view.</figcaption></figure><figure><MembersImage image={getMemberImage("ivory-full-look")} sizes="(max-width: 760px) 34vw, 15vw" /><figcaption>The full silhouette.</figcaption></figure></div></div>
+          <figure className="members-editorial__reading"><MembersStudy image={getMemberImage("reading-room-noir")} sizes="(max-width: 760px) 92vw, 42vw" /><figcaption><span>The reading room</span><span>Noir / study 02</span></figcaption></figure>
+          <div className="members-editorial__aside"><span className="members-label">Unhurried. Unmistakable.</span><p>Made of<br /><em>moments.</em></p><div className="members-editorial__portraits"><figure><MembersStudy image={getMemberImage("ivory-portrait")} sizes="(max-width: 760px) 48vw, 24vw" /><figcaption>Another point of view.</figcaption></figure><figure><MembersStudy image={getMemberImage("ivory-full-look")} sizes="(max-width: 760px) 34vw, 15vw" /><figcaption>The full silhouette.</figcaption></figure></div></div>
         </div>
       </section>
 
       <section id="members-knitwear" className="members-knitwear" aria-labelledby="members-knitwear-title">
         <div className="members-section-head"><p className="members-label">02 / The texture</p><h2 id="members-knitwear-title">Quietly<br /><em>distinct.</em></h2><p>Cable lines. Sculpted collars.<br />A signature worth a second look.</p></div>
-        <div className="members-knitwear__pair"><figure><MembersImage image={getMemberImage("ivory-stripe-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Ivory / stripe study</span><span>Collection preview</span></figcaption></figure><figure><MembersImage image={getMemberImage("midnight-cognac-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Midnight / signature study</span><span>Collection preview</span></figcaption></figure></div>
+        <div className="members-knitwear__pair"><figure><MembersStudy image={getMemberImage("ivory-stripe-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Ivory / stripe study</span><span>Collection preview</span></figcaption></figure><figure><MembersStudy image={getMemberImage("midnight-cognac-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Midnight / signature study</span><span>Collection preview</span></figcaption></figure></div>
         <a className="members-link members-link--cream" href="#members-collection">Discover every study <Arrow /></a>
       </section>
 
@@ -91,8 +93,8 @@ export default function MembersOnlyPage() {
         <p className="members-label">The next chapter / UndrSzn</p>
         <h2 id="members-invitation-title">Stay <em>close.</em></h2>
         <p>For the next look, the next release,<br />and everything taking shape.</p>
-        <a className="members-link members-link--cream" href="https://undrszn.com/">Join the SZN <Arrow diagonal /></a>
-        <p className="members-invitation__fine">Continue to our main store for brand updates.</p>
+        <a className="members-link members-link--cream" href="https://undrszn.com/">Visit the main store <Arrow diagonal /></a>
+        <p className="members-invitation__fine">Find the brand’s latest news and current releases.</p>
         <div className="members-invitation__bottom"><span className="members-label">Uncomfortable nights develop resilience.</span><Link href="/collections/all">Explore the current collection <Arrow /></Link></div>
       </section>
     </article>
