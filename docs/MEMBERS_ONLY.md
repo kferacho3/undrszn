@@ -1,115 +1,83 @@
-# Members Only — A private viewing
+# Members Only — The private edit
 
-## Purpose and visual direction
+`/pages/members-only` is a public editorial preview of the 13 supplied collection studies:
+four lifestyle photographs, five knitwear shots and four small-goods shots. They are not
+purchasable product records. Prices, availability and membership benefits are not invented.
 
-The new route is `/pages/members-only`. It is a public editorial preview of the Members Only
-collection concepts supplied in `Luxury Idea.zip`. The existing community and application pages
-retain their separate purposes.
+## Experience
 
-The design uses the uploaded reading-room portraits as its visual starting point: espresso,
-warm ivory, quiet daylight and oxblood details. Large photographic panels alternate with paper
-sections, restrained captions, and Cormorant Garamond headlines. Existing Archivo typography
-and site navigation connect the room to the wider storefront. The self-hosted serif font is
-licensed under the SIL Open Font License; its package includes the license.
+The entrance is a finite, native vertical-scroll gallery with two counter-moving columns.
+Photographs and product cutouts keep their natural aspect ratio and a stable display size;
+only vertical position changes. There is no bending, stretching, zooming or perspective.
+Transparent products sit directly on the page background, without panels, glows or shadows.
+Mobile uses one full-size column. Short phones use a normally scrolling, taller stage so
+the photograph is not squeezed into the available viewport height. Wheel and touch retain their native scrolling behavior.
 
-## Page sequence
+Seven direct selection buttons, an inspect action, a still-view switch, and links straight
+to the collection make the gallery optional. Below it: two garment studies, an editorial
+portrait, four selectable small-goods studies, the complete filterable edit, and shop links.
+The members header omits the repeated announcement and keeps its primary links concise.
 
-1. **A private viewing:** large ivory reading-room portrait and a direct route to the full preview.
-2. **The perspective:** dark reading-room portrait, a second portrait, and a complete standing silhouette.
-3. **The texture:** ivory and midnight knitwear studies, shown as full garments.
-4. **The details:** four selectable small-goods colour/form studies.
-5. **The full preview:** all 13 supplied images, filterable as knitwear, small goods, or editorial frames.
-6. **Stay close:** continuation to the main brand store for updates, plus the current collection.
+The native image dialog supports previous/next, arrow keys, Escape, detail zoom and focus
+restoration. Opening and closing preserves page position, including within the sticky scene.
+The original source image remains available through “Open full image.”
 
-## What works
+## Theme and accessibility
 
-- All 13 source images are represented; they are four editorial images, five knitwear images,
-  and four small-goods images, not thirteen individual products.
-- Every preview-gallery image opens in an accessible native dialog.
-- Featured portraits, knitwear and small goods also open the same viewer directly. The
-  previous/next sequence stays within that image's category.
-- The viewer traps focus, closes with Escape, restores focus to its opener, and supports
-  previous/next buttons and arrow keys without moving beyond the selected category.
-- **View details** displays the largest supplied derivative at its actual pixel size in a
-  scrollable stage. Focus moves to that stage for keyboard panning; **Fit image** returns to
-  the complete composition. Moving to another study resets the view.
-- Filters expose their pressed state and announce the result count.
-- Four small-goods controls change the displayed image, colour label and caption together.
-- The main navigation, menu, footer, sitemap and Site Notes include the new route.
-- Motion is restrained and respects reduced-motion preferences. There is no autoplay, sound,
-  scroll hijacking or decorative authentication gate.
+The page, header, product stages, filters and viewer inherit the site's saved light/dark
+selection. Dark is the default. The theme control is visible on desktop and mobile.
+Paper/ink and charcoal/ivory surfaces share warm oxblood accents. Lifestyle photographs
+retain their setting. Product cutouts have real alpha rather than a CSS blending trick.
 
-## Media
+Reduced motion removes the long pinned scroll area and uses the semantic still image with
+direct selectors. CSS section parallax is progressive and disabled for reduced motion.
+All images remain available in the ordinary collection grid without JavaScript.
 
-The typed inventory is `src/data/members.ts`; responsive derivatives are in `public/media/members/`.
-The media README maps every original filename to its semantic asset ID. All original images
-remain unchanged. WebP derivatives were re-encoded at quality 86 in three responsive widths,
-without enlargement. The hero's largest image is 1118 × 1407 and approximately 110 KiB.
+## Rendering and media
 
-The screenshot-style tonal zip source retains its black bars in the image bytes. The gallery
-uses a CSS viewport to show the garment cleanly; the full-source viewer keeps the entire image
-available. Its detail view opens at the garment, with the original screenshot still available
-through **Open full image**. Portraits keep their original orientation and lettering.
+`MembersRunway.tsx` manages native scrolling, lifecycle and controls. A single inherited CSS
+variable moves ordinary responsive image elements vertically. Rendering stops when motion
+settles, the scene leaves the viewport, or the document is hidden. Listeners are removed on
+teardown. No WebGL or additional runtime dependencies are required.
 
-## Current integration boundary
+`src/data/members.ts` supplies all imagery. The nine product photos have new responsive,
+lossless WebP cutouts in `public/media/members/cutouts/`. Original photos are retained.
+Apple Vision supplies foreground masks; Pillow adds alpha to the original RGB pixels.
+The dark garment masks have a one-pixel edge trim to reduce white fringing. The screenshot
+chrome around the tonal zip is cropped before masking. No product pixels are generated or
+recoloured. Full-size outputs are verified pixel-for-pixel against their masked originals.
 
-This is a **public preview**, not a membership authorization system. No email address is collected
-or stored on this page. The final `Visit the main store` link opens `https://undrszn.com/` for
-brand news and current releases. It does not enroll the visitor. The local site's newsletter
-dialog still uses a preview form, so this page does not route visitors into a simulated signup.
+To regenerate on macOS 14+ with Swift and Pillow:
 
-No product prices, stock levels, manufacturing details, release dates, membership terms or
-benefits have been invented. The site-wide preview mode and noindex behavior remain in effect.
-The concept images are not added to the purchasable catalog or cart.
+```sh
+python3 scripts/prepare-member-cutouts.py
+```
 
-Before genuine restricted access is introduced, connect a server-verified identity and
-membership entitlement source, protect the relevant data/media where required, and define
-actual access terms. A client-side password or localStorage flag would not provide this.
+The first generative extraction experiment changed textile detail and was rejected; it is
+not used on the site. The owner explicitly chose the pixel-preserving mask workflow.
 
-## Logo selection
+## References
 
-The new official identity is being reviewed separately. This implementation retains the current
-storefront logo so that no unselected proposal is silently promoted to the final brand mark.
-The downloadable logo collection includes three distinct symbol/wordmark directions.
+- [Colin Demenge / Codrops experimental carousel](https://github.com/colindmg/r3f-experimental-carousel):
+  inspiration for counter-moving image sequences, adapted without its image deformation.
+- [David Fauré horizontal parallax gallery](https://github.com/davidfaure/horizontal-parallax-gallery-codrops):
+  reference for image-plane parallax, translated to native vertical scrolling.
+- [Codrops minimal online store principles](https://tympanus.net/codrops/2012/12/26/tips-for-a-clean-and-minimal-online-store-design/):
+  applied through concise navigation, readable captions, product prominence and direct shop links.
 
-## Recovery and October 17 refinement
-
-The earlier implementation was recovered from commit
-`4a5322978c14981903288424787467b17de7074f` on `feat/members-private-viewing`, already associated
-with pull request #1. Its page, responsive media, navigation and documentation were preserved.
-The current refinement adds direct viewing from the editorial chapters and actual-size detail
-inspection, improves functional mobile captions, and makes the final store handoff explicit.
-At 390 × 844, the opening portrait now begins about 377px from the viewport top rather than
-613px, placing the full image in the first screen after the page title. The desktop spread
-retains its original composition.
-
-## Research and design inferences
-
-- [UndrSzn](https://undrszn.com/): the brand's existing resilience message and invitation to
-  follow upcoming releases ground the language and continuation to the main store.
-- [Loro Piana Narratives](https://us.loropiana.com/en/cm/campaigns/narratives): its photographic
-  campaign archive informed the decision to let images, short captions and spacious editorial
-  sections carry the experience. This is a design inference, not a copied layout.
-- [Aman x Kim Jones](https://shop.aman.com/aman-x-kim-jones-collection): its place-based narrative
-  leads directly into collection exploration. The inferred application here is one coherent
-  reading-room setting and a clear gallery entry.
-- [The Ferguson Room](https://www.dorvellferguson.com/modeling): private-set language and a
-  carefully paced photographic archive informed the room-like presentation. UndrSzn's layout
-  and typography remain its own.
-- The supplied concept photography, rather than another brand's product claims, determines
-  this page's colour, composition and descriptive captions.
-
-These are design references, not claims about measurable conversion uplift.
+Only the supplied UNDR imagery is used. Cormorant Garamond is self-hosted under its bundled
+SIL Open Font License. Existing store routes, preview mode and checkout boundary remain.
 
 ## Verification
 
-Follow `AGENTS.md`: `npm run lint`, `npm run typecheck`, and `npm run build`.
-All three passed on October 17, 2026; the production build generated 31 static pages.
-Local Chromium verification covered all 13 studies and decoded all 39 WebP derivatives;
-filters returned 5 knitwear, 4 small-goods, 4 editorial and 13 total images. Direct photo opening,
-viewer navigation, detail focus, Escape/focus restoration, and colour-study changes passed.
-Layouts were checked at 320, 390, 768, 1024, 1440 and 1920px with no horizontal overflow, plus
-light/dark themes and reduced motion. No browser runtime exceptions were recorded.
+Required checks: `npm run lint`, `npm run typecheck`, `npm run build`.
+Browser review covers desktop/mobile composition, scroll progression, still view, image
+inspection, keyboard navigation, filters, swatches and both theme surfaces. This page is
+an editorial preview, not a membership authentication or purchase flow.
 
-The existing Vercel preview linked from pull request #1 is deployment-protected; these checks
-were performed against the local application, not an authenticated production deployment.
+Final verification on October 17: desktop 1800px and mobile 390×844 / 320×568,
+light/dark switching, reduced-motion emulation, collection filters (13/5/4/4), colour
+selection, detail focus, and Escape were checked in Chrome. Product stage backgrounds
+resolve to transparent; the hero uses translation-only transforms. Lint, typecheck and
+production build pass. Chrome's installed React DevTools reported an instrumentation
+error during hot reload; this was an extension error, not an application exception.

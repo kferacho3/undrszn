@@ -44,7 +44,7 @@
 }
 
 .members-gallery__filter:hover,
-.members-gallery__filter[aria-pressed="true"] { color: var(--members-oxblood); }
+.members-gallery__filter[aria-pressed="true"] { color: var(--members-accent); }
 .members-gallery__filter[aria-pressed="true"]::after { opacity: 1; }
 .members-gallery__filter-count { font-family: var(--font-mono); font-size: 11px; font-variant-numeric: tabular-nums; }
 
@@ -72,7 +72,7 @@
   overflow: hidden;
   width: 100%;
   aspect-ratio: 4 / 5;
-  background: color-mix(in srgb, var(--members-paper) 84%, var(--members-white));
+  background: transparent;
   color: var(--members-paper-ink);
 }
 
@@ -121,7 +121,7 @@
   overflow: hidden;
   color: var(--members-paper-ink);
   background: var(--members-paper);
-  color-scheme: light;
+  color-scheme: inherit;
 }
 
 .members-viewer[open] { display: flex; flex-direction: column; }
@@ -142,13 +142,13 @@
 .members-viewer__tools { display: flex; flex-shrink: 0; align-items: center; gap: 12px; }
 .members-viewer__detail { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 9px 12px; border: 1px solid var(--members-paper-rule); font-size: 11px; line-height: 1.4; }
 .members-viewer__detail:hover,
-.members-viewer__detail[aria-pressed="true"] { background: var(--members-paper-ink); color: var(--members-cream); }
+.members-viewer__detail[aria-pressed="true"] { background: var(--members-paper-ink); color: var(--members-paper); }
 .members-viewer__close, .members-viewer__step { display: grid; flex-shrink: 0; width: 44px; height: 44px; place-items: center; color: var(--members-paper-ink); border: 1px solid var(--members-paper-rule); }
-.members-viewer__close:hover, .members-viewer__step:not(:disabled):hover { background: var(--members-paper-ink); color: var(--members-cream); }
+.members-viewer__close:hover, .members-viewer__step:not(:disabled):hover { background: var(--members-paper-ink); color: var(--members-paper); }
 .members-viewer__step:disabled { opacity: 0.3; }
 
 .members-viewer__figure { display: flex; flex: 1; flex-direction: column; min-height: 0; }
-.members-viewer__stage { display: flex; flex: 1; min-height: 0; align-items: center; justify-content: center; padding: 20px; overflow: auto; background: color-mix(in srgb, var(--members-paper) 84%, var(--members-white)); }
+.members-viewer__stage { display: flex; flex: 1; min-height: 0; align-items: center; justify-content: center; padding: 20px; overflow: auto; background: transparent; }
 .members-viewer .members-viewer__image { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; object-position: center; }
 .members-viewer__stage--detail { display: block; overscroll-behavior: contain; }
 .members-viewer__stage:focus-visible { outline-offset: -3px; }
@@ -159,14 +159,14 @@
 
 .members-viewer__foot { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 24px; border-top: 1px solid var(--members-paper-rule); }
 .members-viewer__original { display: inline-flex; min-height: 44px; align-items: center; gap: 9px; font-size: 11px; text-decoration: underline; text-underline-offset: 4px; }
-.members-viewer__original:hover { color: var(--members-oxblood); }
+.members-viewer__original:hover { color: var(--members-accent); }
 .members-viewer__original svg { width: 14px; height: 14px; }
 .members-viewer__links { display: flex; align-items: center; gap: 28px; }
 .members-viewer__hint { margin: 0; color: var(--members-paper-muted); font-size: 10px; line-height: 1.5; }
 .members-viewer__navigation { display: flex; align-items: center; gap: 16px; }
 .members-viewer__position { min-width: 61px; color: var(--members-paper-muted); font-family: var(--font-mono); font-size: 11px; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
 .members-viewer__position > span[aria-hidden] { margin-inline: 4px; }
-.members-gallery :focus-visible, .members-viewer :focus-visible { outline-color: var(--members-oxblood); }
+.members-gallery :focus-visible, .members-viewer :focus-visible { outline-color: var(--members-accent); }
 
 @media (max-width: 1000px) {
   .members-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

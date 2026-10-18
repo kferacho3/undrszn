@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
+import { MembersRunway } from "@/components/members/MembersRunway";
 import { MembersGallery } from "@/components/members/MembersGallery";
 import { MembersGoods } from "@/components/members/MembersGoods";
 import { MembersStudy } from "@/components/members/MembersStudy";
@@ -26,76 +27,44 @@ export const metadata: Metadata = {
   },
 };
 
-function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d={diagonal ? "M5 19 19 5M5 5h14v14" : "M4 12h15m-6-6 6 6-6 6"} stroke="currentColor" strokeWidth="1.2" /></svg>;
-}
-
 export default function MembersOnlyPage() {
   return (
     <article className={`members ${cormorant.variable}`}>
-      <section className="members-hero" aria-labelledby="members-title">
-        <div className="members-hero__folio members-label"><span>UndrSzn / Members Only</span><span>A private viewing</span></div>
-        <div className="members-hero__layout">
-          <div className="members-hero__copy">
-            <div className="members-hero__heading">
-              <p className="members-label members-hero__eyebrow">A world within the SZN</p>
-              <h1 id="members-title">Members<br /><em>only.</em></h1>
-            </div>
-            <p className="members-hero__intro">Some things deserve<br />a closer look.</p>
-            <a className="members-link members-link--cream" href="#members-collection">Explore the preview <Arrow /></a>
-            <div className="members-hero__note"><span className="members-hero__line" aria-hidden="true" /><p>A quieter expression of UndrSzn.<br />A first look, shared with you.</p></div>
-          </div>
-          <figure className="members-hero__portrait">
-            <MembersStudy image={getMemberImage("reading-room-ivory")} priority sizes="(max-width: 760px) 90vw, (min-width: 1800px) 620px, (min-width: 1200px) 562px, 45vw" />
-            <figcaption><span>In the reading room</span><span>01 / 13</span></figcaption>
-          </figure>
-          <div className="members-hero__vertical" aria-hidden="true">Uncomfortable nights develop resilience</div>
-        </div>
-        <div className="members-hero__bottom"><span className="members-label">The Members Only collection</span><a href="#members-introduction" aria-label="Continue to the collection introduction">Scroll to discover <span aria-hidden="true">↓</span></a><span className="members-label">Preview edition</span></div>
-      </section>
-
-      <nav className="members-index" aria-label="Members Only chapters">
-        <a href="#members-introduction"><span>01</span>The perspective</a>
-        <a href="#members-knitwear"><span>02</span>The texture</a>
-        <a href="#members-small-goods"><span>03</span>The details</a>
-        <a href="#members-collection"><span>04</span>The full preview</a>
-      </nav>
-
-      <section id="members-introduction" className="members-intro members-paper" aria-labelledby="members-intro-title">
-        <div className="members-intro__heading">
-          <p className="members-label">01 / The perspective</p>
-          <h2 id="members-intro-title">The same spirit.<br /><em>A different rhythm.</em></h2>
-        </div>
-        <div className="members-intro__text"><p>From the weight of a silhouette to the curve of a signature. A closer look at the ideas taking shape within UndrSzn.</p><p className="members-fine">Collection concepts shown for preview. Product details will be shared as they are confirmed.</p></div>
-        <div className="members-editorial">
-          <figure className="members-editorial__reading"><MembersStudy image={getMemberImage("reading-room-noir")} sizes="(max-width: 760px) 92vw, 42vw" /><figcaption><span>The reading room</span><span>Noir / study 02</span></figcaption></figure>
-          <div className="members-editorial__aside"><span className="members-label">Unhurried. Unmistakable.</span><p>Made of<br /><em>moments.</em></p><div className="members-editorial__portraits"><figure><MembersStudy image={getMemberImage("ivory-portrait")} sizes="(max-width: 760px) 48vw, 24vw" /><figcaption>Another point of view.</figcaption></figure><figure><MembersStudy image={getMemberImage("ivory-full-look")} sizes="(max-width: 760px) 34vw, 15vw" /><figcaption>The full silhouette.</figcaption></figure></div></div>
-        </div>
-      </section>
+      <MembersRunway />
 
       <section id="members-knitwear" className="members-knitwear" aria-labelledby="members-knitwear-title">
-        <div className="members-section-head"><p className="members-label">02 / The texture</p><h2 id="members-knitwear-title">Quietly<br /><em>distinct.</em></h2><p>Cable lines. Sculpted collars.<br />A signature worth a second look.</p></div>
-        <div className="members-knitwear__pair"><figure><MembersStudy image={getMemberImage("ivory-stripe-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Ivory / stripe study</span><span>Collection preview</span></figcaption></figure><figure><MembersStudy image={getMemberImage("midnight-cognac-zip")} sizes="(max-width: 760px) 86vw, 40vw" /><figcaption><span>Midnight / signature study</span><span>Collection preview</span></figcaption></figure></div>
-        <a className="members-link members-link--cream" href="#members-collection">Discover every study <Arrow /></a>
+        <div className="members-section-head">
+          <span className="members-label">01 / Knitwear</span>
+          <h2 id="members-knitwear-title">A feeling.<br /><em>In every thread.</em></h2>
+          <p>Follow the cable lines. Notice the contrast.<br />Get closer to the pieces behind the look.</p>
+        </div>
+        <div className="members-knitwear__pair">
+          <figure><MembersStudy image={getMemberImage("ivory-stripe-zip")} sizes="(max-width: 760px) 90vw, 42vw" /><figcaption><span>01 — Ivory / striped zip</span><span>Knitwear study</span></figcaption></figure>
+          <figure><MembersStudy image={getMemberImage("midnight-cognac-zip")} sizes="(max-width: 760px) 90vw, 42vw" /><figcaption><span>02 — Midnight / cognac signature</span><span>Knitwear study</span></figcaption></figure>
+        </div>
+        <a className="members-link" href="#members-collection">Explore all five knits <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section className="members-interlude" aria-label="The collection in frame">
+        <div className="members-interlude__portrait"><MembersStudy image={getMemberImage("reading-room-noir")} sizes="(max-width: 760px) 100vw, 50vw" /></div>
+        <div className="members-interlude__copy"><span className="members-label">The UNDR point of view</span><h2>Wear your<br /><em>own rhythm.</em></h2><p>From the first impression<br />to the smallest detail.</p><Link className="members-link members-link--cream" href="/collections/all">Shop current releases <span aria-hidden="true">↗</span></Link></div>
       </section>
 
       <section id="members-small-goods" className="members-goods members-paper" aria-labelledby="members-goods-title">
-        <div className="members-goods__copy"><p className="members-label">03 / The details</p><h2 id="members-goods-title">An impression.<br /><em>In the details.</em></h2><p>The curve of the monogram.<br />The richness of the colour.<br />Small forms with their own presence.</p><p className="members-fine">Explore the colour studies.</p><a className="members-link" href="#members-collection">View the full preview <Arrow /></a></div>
+        <div className="members-goods__copy"><span className="members-label">02 / Small goods</span><h2 id="members-goods-title">Leave an<br /><em>impression.</em></h2><p>A signature in the palm of your hand.<br />Explore cognac, ivory, and scarlet.</p><span className="members-fine">Select a colour. Open it for a closer look.</span></div>
         <MembersGoods />
       </section>
 
       <section id="members-collection" className="members-collection members-paper" aria-labelledby="members-collection-title">
-        <div className="members-collection__head"><div><p className="members-label">04 / The full preview</p><h2 id="members-collection-title">Take a <em>closer look.</em></h2></div><p>Thirteen frames from the collection.<br />Open a study and explore the details.</p></div>
+        <div className="members-collection__head"><div><span className="members-label">03 / The complete edit</span><h2 id="members-collection-title">Find your <em>expression.</em></h2></div><p>13 collection studies. Every angle, at your pace.<br /><span className="members-fine">Concept preview. Availability and product details to follow.</span></p></div>
         <MembersGallery />
       </section>
 
       <section className="members-invitation" aria-labelledby="members-invitation-title">
-        <p className="members-label">The next chapter / UndrSzn</p>
-        <h2 id="members-invitation-title">Stay <em>close.</em></h2>
-        <p>For the next look, the next release,<br />and everything taking shape.</p>
-        <a className="members-link members-link--cream" href="https://undrszn.com/">Visit the main store <Arrow diagonal /></a>
-        <p className="members-invitation__fine">Find the brand’s latest news and current releases.</p>
-        <div className="members-invitation__bottom"><span className="members-label">Uncomfortable nights develop resilience.</span><Link href="/collections/all">Explore the current collection <Arrow /></Link></div>
+        <span className="members-label">The next chapter is taking shape.</span>
+        <h2 id="members-invitation-title">Until then,<br /><em>make it yours.</em></h2>
+        <Link className="members-link members-link--cream" href="/collections/all">Shop the current collection <span aria-hidden="true">↗</span></Link>
+        <div className="members-invitation__bottom"><span>UNDR.RATED.SZN</span><a href="https://undrszn.com/">Visit the main store ↗</a></div>
       </section>
     </article>
   );

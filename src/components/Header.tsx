@@ -26,22 +26,22 @@ export function Header() {
 
   return (
     <>
-      <div className={`announce${isMembersPage ? " announce--members" : ""}`}>
-        {!isMembersPage && <span className="dot" aria-hidden="true" />}
+      {!isMembersPage && <div className="announce">
+        <span className="dot" aria-hidden="true" />
         <span>
-          {isMembersPage ? "Members Only — A private viewing" : `${site.name} — ${site.collection}`}
+          {site.name} — {site.collection}
         </span>
         <span className="hide-sm" aria-hidden="true">
           ·
         </span>
-        <Link className="hide-sm" href={isMembersPage ? "/collections/all" : "/pages/journey"}>
-          {isMembersPage ? "Shop the current collection" : "The Journey — a film"}
+        <Link className="hide-sm" href="/pages/journey">
+          The Journey — a film
         </Link>
-      </div>
-      <header className="site-header">
+      </div>}
+      <header className={`site-header${isMembersPage ? " site-header--members" : ""}`}>
         <div className="container site-header__inner">
           <nav className="nav" aria-label="Main navigation">
-            {primaryNav.map((item) => (
+            {primaryNav.filter(item => !isMembersPage || ["Shop", "The Campaign", "Members"].includes(item.label)).map((item) => (
               <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>
                 {item.label}
               </Link>
@@ -67,7 +67,7 @@ export function Header() {
             <Link className="icon-btn hide-sm" href="/account" aria-label="Your account">
               <Icon name="user" />
             </Link>
-            <ThemeToggle className="hide-sm" />
+            <ThemeToggle />
             <button
               className={`bag-btn ${bump ? "bump" : ""}`}
               onClick={() => openDialog({ kind: "bag" })}

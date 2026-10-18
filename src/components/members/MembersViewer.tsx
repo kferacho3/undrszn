@@ -32,13 +32,17 @@ export function MembersViewer({ images, initialIndex, returnFocusTo, onClose }: 
     const dialog = dialogRef.current;
     if (!dialog) return;
     const previousOverflow = document.documentElement.style.overflow;
+    const scrollPosition = { top: window.scrollY, left: window.scrollX, behavior: "instant" as const };
     if (!dialog.open) dialog.showModal();
     document.documentElement.style.overflow = "hidden";
+    window.scrollTo(scrollPosition);
 
     return () => {
       document.documentElement.style.overflow = previousOverflow;
       if (dialog.open) dialog.close();
       if (returnFocusTo.isConnected) returnFocusTo.focus({ preventScroll: true });
+      // Native dialog focus restoration can move a control inside a sticky scene.
+      window.scrollTo(scrollPosition);
     };
   }, [returnFocusTo]);
 
@@ -127,7 +131,7 @@ export function MembersViewer({ images, initialIndex, returnFocusTo, onClose }: 
 
       <div className="members-viewer__foot">
         <div className="members-viewer__links">
-          <a href={image.src} target="_blank" rel="noopener noreferrer" className="members-viewer__original">
+          <a href={image.originalSrc ?? image.src} target="_blank" rel="noopener noreferrer" className="members-viewer__original">
             Open full image <Arrow />
             <span className="sr-only"> in a new tab</span>
           </a>

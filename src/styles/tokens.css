@@ -59,13 +59,14 @@
 
   --radius: 2px;
 
-  /* Members Only is an editorial room with its own fixed paper / espresso surfaces. */
-  --members-paper: #f0ece3;
-  --members-paper-ink: #28231e;
-  --members-paper-muted: #686057;
-  --members-paper-rule: rgba(40, 35, 30, 0.2);
+  /* Members inherits the storefront theme; oxblood remains the editorial accent. */
+  --members-paper: var(--bg);
+  --members-paper-ink: var(--ink);
+  --members-paper-muted: var(--ink-2);
+  --members-paper-rule: var(--rule-strong);
   --members-oxblood: #652b31;
-  --members-white: #fff;
+  --members-accent: #dda5a0;
+  --members-white: var(--bg-elev);
   --members-night: #171512;
   --members-cream: #f3eee4;
   --members-soft: #c8bfae;
@@ -76,6 +77,7 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
+  --members-accent: #652b31;
   --bg: #f3f1eb;
   --bg-elev: #ebe8e0;
   --bg-raise: #e3e0d7;

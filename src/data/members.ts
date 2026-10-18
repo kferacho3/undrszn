@@ -7,6 +7,7 @@ export type MemberImage = {
   title: string;
   category: 'Editorial' | 'Knitwear' | 'Small goods';
   src: string;
+  originalSrc?: string;
   srcSet: string;
   width: number;
   height: number;
@@ -69,110 +70,118 @@ export const memberImages: MemberImage[] = [
     "id": "ivory-stripe-zip",
     "title": "Ivory / striped zip",
     "category": "Knitwear",
-    "src": "/media/members/ivory-stripe-zip-1092.webp",
-    "srcSet": "/media/members/ivory-stripe-zip-480.webp 480w, /media/members/ivory-stripe-zip-800.webp 800w, /media/members/ivory-stripe-zip-1092.webp 1092w",
+    "src": "/media/members/cutouts/ivory-stripe-zip-1092.webp",
+    "srcSet": "/media/members/cutouts/ivory-stripe-zip-480.webp 480w, /media/members/cutouts/ivory-stripe-zip-800.webp 800w, /media/members/cutouts/ivory-stripe-zip-1092.webp 1092w",
     "width": 1092,
     "height": 1440,
     "alt": "Ivory cable-knit zip hoodie with burgundy sleeve stripes and a circular chest emblem.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/ivory-stripe-zip-1092.webp"
   },
   {
     "id": "midnight-tonal-zip",
     "title": "Midnight / tonal zip",
     "category": "Knitwear",
-    "src": "/media/members/midnight-tonal-zip-1200.webp",
-    "srcSet": "/media/members/midnight-tonal-zip-480.webp 480w, /media/members/midnight-tonal-zip-800.webp 800w, /media/members/midnight-tonal-zip-1200.webp 1200w",
+    "src": "/media/members/cutouts/midnight-tonal-zip-1200.webp",
+    "srcSet": "/media/members/cutouts/midnight-tonal-zip-480.webp 480w, /media/members/cutouts/midnight-tonal-zip-800.webp 800w, /media/members/cutouts/midnight-tonal-zip-1200.webp 1200w",
     "width": 1200,
-    "height": 2601,
+    "height": 1582,
     "alt": "Black textured hooded knit with an asymmetric zipper and tonal monogram on a light background.",
     "fit": "contain",
     "objectPosition": "50% 50%",
-    "screenshotCrop": true
+    "originalSrc": "/media/members/midnight-tonal-zip-1200.webp"
   },
   {
     "id": "midnight-cognac-zip",
     "title": "Midnight / cognac signature",
     "category": "Knitwear",
-    "src": "/media/members/midnight-cognac-zip-1092.webp",
-    "srcSet": "/media/members/midnight-cognac-zip-480.webp 480w, /media/members/midnight-cognac-zip-800.webp 800w, /media/members/midnight-cognac-zip-1092.webp 1092w",
+    "src": "/media/members/cutouts/midnight-cognac-zip-1092.webp",
+    "srcSet": "/media/members/cutouts/midnight-cognac-zip-480.webp 480w, /media/members/cutouts/midnight-cognac-zip-800.webp 800w, /media/members/cutouts/midnight-cognac-zip-1092.webp 1092w",
     "width": 1092,
     "height": 1440,
     "alt": "Black hooded cable knit with an asymmetric warm-brown zipper and contrasting monogram.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/midnight-cognac-zip-1092.webp"
   },
   {
     "id": "midnight-collar-knit",
     "title": "Midnight / raised collar",
     "category": "Knitwear",
-    "src": "/media/members/midnight-collar-knit-1200.webp",
-    "srcSet": "/media/members/midnight-collar-knit-480.webp 480w, /media/members/midnight-collar-knit-800.webp 800w, /media/members/midnight-collar-knit-1200.webp 1200w",
+    "src": "/media/members/cutouts/midnight-collar-knit-1200.webp",
+    "srcSet": "/media/members/cutouts/midnight-collar-knit-480.webp 480w, /media/members/cutouts/midnight-collar-knit-800.webp 800w, /media/members/cutouts/midnight-collar-knit-1200.webp 1200w",
     "width": 1200,
     "height": 800,
     "alt": "Black textured pullover with a raised collar and sculpted cable lines on a white background.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/midnight-collar-knit-1200.webp"
   },
   {
     "id": "ivory-ribbed-zip",
     "title": "Ivory / ribbed zip",
     "category": "Knitwear",
-    "src": "/media/members/ivory-ribbed-zip-1200.webp",
-    "srcSet": "/media/members/ivory-ribbed-zip-480.webp 480w, /media/members/ivory-ribbed-zip-800.webp 800w, /media/members/ivory-ribbed-zip-1200.webp 1200w",
+    "src": "/media/members/cutouts/ivory-ribbed-zip-1200.webp",
+    "srcSet": "/media/members/cutouts/ivory-ribbed-zip-480.webp 480w, /media/members/cutouts/ivory-ribbed-zip-800.webp 800w, /media/members/cutouts/ivory-ribbed-zip-1200.webp 1200w",
     "width": 1200,
     "height": 960,
     "alt": "Ivory ribbed zip hoodie with two lower patch pockets on a warm off-white background.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/ivory-ribbed-zip-1200.webp"
   },
   {
     "id": "scarlet-tall-wallet",
     "title": "Scarlet / tall form",
     "category": "Small goods",
-    "src": "/media/members/scarlet-tall-wallet-1200.webp",
-    "srcSet": "/media/members/scarlet-tall-wallet-480.webp 480w, /media/members/scarlet-tall-wallet-800.webp 800w, /media/members/scarlet-tall-wallet-1200.webp 1200w",
+    "src": "/media/members/cutouts/scarlet-tall-wallet-1200.webp",
+    "srcSet": "/media/members/cutouts/scarlet-tall-wallet-480.webp 480w, /media/members/cutouts/scarlet-tall-wallet-800.webp 800w, /media/members/cutouts/scarlet-tall-wallet-1200.webp 1200w",
     "width": 1200,
     "height": 1097,
     "alt": "Tall red wallet or cover with an embossed flowing monogram and edge stitching.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/scarlet-tall-wallet-1200.webp"
   },
   {
     "id": "scarlet-wallet",
     "title": "Scarlet / folded form",
     "category": "Small goods",
-    "src": "/media/members/scarlet-wallet-1179.webp",
-    "srcSet": "/media/members/scarlet-wallet-480.webp 480w, /media/members/scarlet-wallet-800.webp 800w, /media/members/scarlet-wallet-1179.webp 1179w",
+    "src": "/media/members/cutouts/scarlet-wallet-1179.webp",
+    "srcSet": "/media/members/cutouts/scarlet-wallet-480.webp 480w, /media/members/cutouts/scarlet-wallet-800.webp 800w, /media/members/cutouts/scarlet-wallet-1179.webp 1179w",
     "width": 1179,
     "height": 1334,
     "alt": "Red folded wallet with a large embossed monogram and fine perimeter stitching.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/scarlet-wallet-1179.webp"
   },
   {
     "id": "cognac-wallet",
     "title": "Cognac / folded form",
     "category": "Small goods",
-    "src": "/media/members/cognac-wallet-1199.webp",
-    "srcSet": "/media/members/cognac-wallet-480.webp 480w, /media/members/cognac-wallet-800.webp 800w, /media/members/cognac-wallet-1199.webp 1199w",
+    "src": "/media/members/cutouts/cognac-wallet-1199.webp",
+    "srcSet": "/media/members/cutouts/cognac-wallet-480.webp 480w, /media/members/cutouts/cognac-wallet-800.webp 800w, /media/members/cutouts/cognac-wallet-1199.webp 1199w",
     "width": 1199,
     "height": 1312,
     "alt": "Warm cognac-colored folded wallet with an embossed monogram and perimeter stitching.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/cognac-wallet-1199.webp"
   },
   {
     "id": "ivory-wallet",
     "title": "Ivory / folded form",
     "category": "Small goods",
-    "src": "/media/members/ivory-wallet-1199.webp",
-    "srcSet": "/media/members/ivory-wallet-480.webp 480w, /media/members/ivory-wallet-800.webp 800w, /media/members/ivory-wallet-1199.webp 1199w",
+    "src": "/media/members/cutouts/ivory-wallet-1199.webp",
+    "srcSet": "/media/members/cutouts/ivory-wallet-480.webp 480w, /media/members/cutouts/ivory-wallet-800.webp 800w, /media/members/cutouts/ivory-wallet-1199.webp 1199w",
     "width": 1199,
     "height": 1312,
     "alt": "Ivory folded wallet with a tonal embossed monogram and perimeter stitching.",
     "fit": "contain",
-    "objectPosition": "50% 50%"
+    "objectPosition": "50% 50%",
+    "originalSrc": "/media/members/ivory-wallet-1199.webp"
   }
 ];
 
