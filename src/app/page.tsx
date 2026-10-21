@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { AmbientLoop } from "@/components/film/AmbientLoop";
+import { BrandMeanings } from "@/components/BrandMeanings";
+import { ScreeningRoom } from "@/components/screening-room/ScreeningRoom";
 import { HoverFilmCard } from "@/components/film/HoverFilmCard";
 import { FilmPlayer } from "@/components/film/FilmPlayer";
 import { Media } from "@/components/Media";
@@ -7,13 +8,6 @@ import { Newsletter } from "@/components/Newsletter";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { formatMoney, products } from "@/data/catalog";
 import { films } from "@/data/films";
-
-const acronym = [
-  ["U", "Uncomfortable"],
-  ["N", "Nights"],
-  ["D", "Develop"],
-  ["R", "Resilience"],
-] as const;
 
 const frames = [
   { id: "cream-full-look", href: "/products/deluxe-dirty-rodamn", caption: "Cream / Deluxe — full look" },
@@ -26,22 +20,7 @@ export default function HomePage() {
   const journey = films.journey;
   return (
     <>
-      {/* The Shopify opening: film first, with clear navigation over the footage. */}
-      <section className="opening-film" aria-labelledby="opening-title">
-        <AmbientLoop film={films["ambient-loop"]} priority sizes="100vw" focus="50% 20%" />
-        <div className="opening-film__overlay">
-          <nav className="opening-film__links" aria-label="Explore UNDR">
-            <Link className="bubble-link" href="/products/dirty-rodman-hoodie">Dirty Rodman <span aria-hidden="true">↗</span></Link>
-            <Link className="bubble-link" href="/pages/content-creator-application">Get featured <span aria-hidden="true">↗</span></Link>
-            <Link className="bubble-link" href="/pages/about-undr-rated-szn">Our story <span aria-hidden="true">↗</span></Link>
-          </nav>
-          <div className="opening-film__copy">
-            <span className="micro">UNDR.RATED.SZN / Remain authentic.</span>
-            <h1 id="opening-title">One last dance<br />with Dirty Rodman.</h1>
-            <a className="opening-film__scroll" href="#the-collection">Meet the collection <span aria-hidden="true">↓</span></a>
-          </div>
-        </div>
-      </section>
+      <ScreeningRoom />
 
       {/* Scroll from the moving campaign into the two original portraits. */}
       <section id="the-collection" className="hero" aria-labelledby="hero-title">
@@ -109,17 +88,7 @@ export default function HomePage() {
       </section>
 
       {/* 02 — The name, decoded */}
-      <section className="acronym" aria-label="What U.N.D.R. stands for">
-        {acronym.map(([letter, word], i) => (
-          <div className="acronym__cell reveal" key={letter} style={{ "--delay": `${i * 90}ms` } as React.CSSProperties}>
-            <span className="micro acronym__index">0{i + 1}</span>
-            <span className="acronym__letter" aria-hidden="true">
-              {letter}
-            </span>
-            <span className="acronym__word">{word}</span>
-          </div>
-        ))}
-      </section>
+      <BrandMeanings />
 
       {/* 03 — Merchandise first */}
       <section className="container section">
