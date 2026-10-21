@@ -28,7 +28,7 @@ export default function HomePage() {
     <>
       {/* The Shopify opening: film first, with clear navigation over the footage. */}
       <section className="opening-film" aria-labelledby="opening-title">
-        <AmbientLoop film={films["ambient-loop"]} priority sizes="100vw" focus="50% 35%" />
+        <AmbientLoop film={films["ambient-loop"]} priority sizes="100vw" focus="50% 20%" />
         <div className="opening-film__overlay">
           <nav className="opening-film__links" aria-label="Explore UNDR">
             <Link className="bubble-link" href="/products/dirty-rodman-hoodie">Dirty Rodman <span aria-hidden="true">↗</span></Link>
