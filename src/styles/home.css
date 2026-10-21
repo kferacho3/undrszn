@@ -2,7 +2,82 @@
    Homepage + shared editorial compositions
    ========================================================================== */
 
-/* ---------- hero ---------- */
+/* Film-led opening, carrying the clear bubble links from the Shopify store. */
+.opening-film {
+  position: relative;
+  isolation: isolate;
+  height: min(calc(100svh - var(--header-h) - 34px), 960px);
+  min-height: 580px;
+  background: #070706;
+  color: #f2efe7;
+}
+.opening-film > .ambient { position: absolute; inset: 0; }
+.opening-film__overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(28px, 4vw, 64px) var(--gutter) 40px;
+  background: linear-gradient(180deg, rgba(7,7,6,.18), transparent 38%, rgba(7,7,6,.76));
+  pointer-events: none;
+}
+.opening-film__links { display: grid; justify-items: start; gap: 12px; }
+.bubble-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 52px;
+  padding: 14px 24px;
+  border: 1px solid rgba(242,239,231,.72);
+  border-radius: 999px;
+  background: rgba(7,7,6,.32);
+  color: #f2efe7;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  pointer-events: auto;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+.bubble-link:hover { background: rgba(242,239,231,.16); border-color: #f2efe7; }
+.bubble-link:active { background: rgba(242,239,231,.24); }
+.bubble-link:focus-visible, .opening-film__scroll:focus-visible { outline: 2px solid #f2efe7; outline-offset: 5px; }
+.opening-film__copy { display: grid; gap: 24px; }
+.opening-film__copy > .micro { color: rgba(242,239,231,.8); }
+.opening-film h1 {
+  font-family: var(--font-body);
+  font-size: clamp(56px, 6.5vw, 112px);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.055em;
+  margin: 0;
+}
+.opening-film__scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  width: fit-content;
+  min-height: 44px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  pointer-events: auto;
+}
+.opening-film .ambient__toggle { z-index: 2; right: var(--gutter); bottom: 44px; border: 1px solid rgba(242,239,231,.5); height: 44px; }
+@media (max-width: 760px) {
+  .opening-film { min-height: 640px; height: calc(100svh - var(--header-h) - 34px); max-height: 920px; }
+  .opening-film__overlay { padding-block: 24px 20px; }
+  .opening-film__copy { gap: 18px; padding-bottom: 56px; }
+  .opening-film h1 { font-size: clamp(44px, 10.5vw, 72px); max-width: 12ch; }
+  .opening-film__links { gap: 10px; }
+  .bubble-link { min-height: 46px; padding: 12px 20px; font-size: 11px; }
+  .opening-film .ambient__toggle { bottom: 20px; }
+}
+
+/* ---------- portrait chapter ---------- */
 .hero {
   position: relative;
   min-height: min(calc(100svh - var(--header-h) - 34px), 1040px);
@@ -31,11 +106,6 @@
     radial-gradient(80% 60% at 50% 100%, rgba(200,52,31,0.22), transparent 70%);
   pointer-events: none;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .hero__visual .media img { animation: hero-settle 2.4s var(--ease-out) both; }
-  .hero__visual > :nth-child(2) img { animation-delay: 120ms; }
-}
-@keyframes hero-settle { from { transform: scale(1.08); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
 .hero__tag {
   position: absolute;
@@ -61,7 +131,7 @@
   color: #f2efe7;
 }
 .hero__title {
-  font-size: clamp(76px, 15.2vw, 260px);
+  font-size: clamp(64px, 12.4vw, 210px);
   line-height: 0.8;
   letter-spacing: -0.015em;
   margin-left: -0.04em;
@@ -97,6 +167,8 @@
   .hero { min-height: auto; }
   .hero__visual { position: relative; inset: auto; height: 62svh; min-height: 380px; z-index: 0; }
   .hero__content { padding-block: 0 var(--s7); margin-top: -96px; position: relative; z-index: 2; }
+  .hero__title { line-height: .98; }
+  .hero__title .outline-text::before { content: ""; display: block; }
   .hero__meta span:last-child { display: none; }
 }
 

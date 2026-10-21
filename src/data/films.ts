@@ -142,7 +142,7 @@ export const films: Record<FilmId, Film> = {
     posterAlt: "An animated chimpanzee wearing the Dirty Rodman hoodie on a city street",
     posterSrc: "/videos/portrait-02-poster.jpg",
     sources: [
-      { src: "/videos/portrait-02-loop.mp4", type: "video/mp4", height: 720 },
+      { src: "/videos/portrait-02-hd.mp4", type: "video/mp4", height: 1080 },
     ],
     ambient: true,
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState, type CSSProperties } from "react";
 import { filmIsReady, type Film } from "@/data/films";
 import { Media } from "../Media";
 
@@ -11,10 +11,12 @@ import { Media } from "../Media";
  */
 export function AmbientLoop({ film, priority = false, sizes = "50vw", focus }: { film: Film; priority?: boolean; sizes?: string; focus?: string }) {
   const ready = filmIsReady(film);
+  const id = useId();
   const wrapRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [load, setLoad] = useState(false);
   const [playing, setPlaying] = useState(false);
+  const [started, setStarted] = useState(false);
   const [userPaused, setUserPaused] = useState(false);
 
   useEffect(() => {
@@ -41,17 +43,43 @@ export function AmbientLoop({ film, priority = false, sizes = "50vw", focus }: {
     const el = wrapRef.current;
     const v = videoRef.current;
     if (!el || !v || !load) return;
-    const io = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !userPaused) void v.play().catch(() => undefined);
+    let visible = false;
+    let interrupted = false;
+    const playIfAllowed = () => {
+      if (visible && !document.hidden && !userPaused && !interrupted) void v.play().catch(() => undefined);
       else v.pause();
+    };
+    const io = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      if (!visible) interrupted = false;
+      playIfAllowed();
     });
+    const onOtherPlay = (event: Event) => {
+      if ((event as CustomEvent<string>).detail !== id) {
+        interrupted = true;
+        v.pause();
+      }
+    };
+    const motion = matchMedia("(prefers-reduced-motion: reduce)");
+    const onMotion = () => { if (motion.matches) { setUserPaused(true); v.pause(); } };
     io.observe(el);
-    return () => io.disconnect();
-  }, [load, userPaused]);
+    window.addEventListener("undr:film-play", onOtherPlay);
+    document.addEventListener("visibilitychange", playIfAllowed);
+    motion.addEventListener("change", onMotion);
+    return () => {
+      io.disconnect();
+      v.pause();
+      window.removeEventListener("undr:film-play", onOtherPlay);
+      document.removeEventListener("visibilitychange", playIfAllowed);
+      motion.removeEventListener("change", onMotion);
+    };
+  }, [load, userPaused, id]);
 
   return (
-    <div className="ambient" ref={wrapRef}>
-      <Media id={film.posterAsset} ratio="auto" priority={priority} sizes={sizes} focus={focus} />
+    <div className="ambient" ref={wrapRef} style={{ "--ambient-focus": focus ?? "50% 50%" } as CSSProperties}>
+      {film.posterSrc ? (
+        <img className="ambient__poster" src={film.posterSrc} alt={film.posterAlt} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} />
+      ) : <Media id={film.posterAsset} ratio="auto" priority={priority} sizes={sizes} focus={focus} />}
       {ready && load && (
         <video
           ref={videoRef}
@@ -62,8 +90,12 @@ export function AmbientLoop({ film, priority = false, sizes = "50vw", focus }: {
           aria-hidden="true"
           tabIndex={-1}
           poster={film.posterSrc}
-          data-playing={playing}
-          onPlaying={() => setPlaying(true)}
+          data-playing={started}
+          onPlaying={() => {
+            setPlaying(true);
+            setStarted(true);
+            window.dispatchEvent(new CustomEvent("undr:film-play", { detail: id }));
+          }}
           onPause={() => setPlaying(false)}
         >
           {film.sources.map((s) => (

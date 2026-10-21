@@ -236,12 +236,14 @@
 /* ---------- ambient loop ---------- */
 .ambient { position: relative; overflow: hidden; background: var(--bg-raise); height: 100%; }
 .ambient .media { position: absolute; inset: 0; --ar: auto; height: 100%; }
+.ambient__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--ambient-focus, 50% 50%); }
 .ambient video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: var(--ambient-focus, 50% 50%);
   opacity: 0;
   transition: opacity 1.2s var(--ease-out);
 }
