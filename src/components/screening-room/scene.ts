@@ -68,7 +68,7 @@ export async function createScreeningRoom(canvas: HTMLCanvasElement, movie: HTML
   led.position.set(1.13, .38, .1); tv.add(led);
 
   const monkey = gltf.scene;
-  monkey.position.set(-1.65, 0, .8); monkey.rotation.y = 1.45;
+  monkey.position.set(-1.65, 0, .8); monkey.rotation.y = 2.05;
   monkey.traverse(object => {
     if (object instanceof THREE.Mesh) {
       object.castShadow = true; object.receiveShadow = true;
@@ -102,15 +102,20 @@ export async function createScreeningRoom(canvas: HTMLCanvasElement, movie: HTML
   const compose = () => {
     const mobile = camera.aspect < .85;
     tv.position.x = mobile ? .8 : 1.5;
+    tv.rotation.y = mobile ? -.12 : -.38;
     monkey.position.x = mobile ? -1.35 : -1.65;
     if (view === "monkey") { home.set(.6, 2.25, mobile ? 6.5 : 5.5); target.set(monkey.position.x, 1.2, .8); }
     else if (view === "film") { home.set(mobile ? 1.7 : 2.7, 2.7, mobile ? 8.8 : 7.2); target.set(tv.position.x, 2.6, -.8); }
-    else { home.set(mobile ? 2.7 : 4.4, mobile ? 4 : 3.35, mobile ? 13.8 : 8.5); target.set(mobile ? .25 : -.1, mobile ? 2 : 1.9, .1); }
-    camera.fov = mobile ? 43 : 38; camera.updateProjectionMatrix();
+    else {
+      // Eye-level, just behind the left shoulder; the portrait display stays fully in frame.
+      home.set(mobile ? -2.5 : -3.2, mobile ? 3.1 : 2.65, mobile ? 9.8 : 4.8);
+      target.set(mobile ? .2 : .7, mobile ? 2 : 2.25, -.4);
+    }
+    camera.fov = view === "room" ? (mobile ? 43 : 48) : (mobile ? 43 : 38); camera.updateProjectionMatrix();
   };
   const selectView = (selected: View) => {
     view = selected; dragAngle = 0; compose(); onView(selected);
-    if (motion.matches) { camera.position.copy(home); currentTarget.copy(target); camera.lookAt(target); monkey.rotation.y = selected === "monkey" ? .35 : 1.45; }
+    if (motion.matches) { camera.position.copy(home); currentTarget.copy(target); camera.lookAt(target); monkey.rotation.y = selected === "monkey" ? .35 : 2.05; }
   };
   const resize = () => {
     const { width, height } = canvas.getBoundingClientRect(); renderer.setSize(width, height, false);
@@ -164,7 +169,7 @@ export async function createScreeningRoom(canvas: HTMLCanvasElement, movie: HTML
         if (nextIdle !== activeIdle) { actions[nextIdle].reset().setEffectiveWeight(1).play(); actions[activeIdle].crossFadeTo(actions[nextIdle], .8, true); activeIdle = nextIdle; }
         if (!reactionTime) actions[0].setEffectiveTimeScale(1);
       }
-      monkey.rotation.y = THREE.MathUtils.lerp(monkey.rotation.y, view === "monkey" || reactionTime > 0 ? .35 : 1.45, 1 - Math.exp(-dt * 3));
+      monkey.rotation.y = THREE.MathUtils.lerp(monkey.rotation.y, view === "monkey" ? .35 : reactionTime > 0 ? Math.atan2(camera.position.x - monkey.position.x, camera.position.z - monkey.position.z) : 2.05, 1 - Math.exp(-dt * 3));
     }
     desiredCamera.copy(home).sub(target).applyAxisAngle(THREE.Object3D.DEFAULT_UP, dragAngle).add(target);
     if (!motion.matches && !dragStart) { desiredCamera.x += pointer.x * .14; desiredCamera.y -= pointer.y * .08; }
