@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BrandMeanings } from "@/components/BrandMeanings";
-import { ScreeningRoom } from "@/components/screening-room/ScreeningRoom";
+import { AmbientLoop } from "@/components/film/AmbientLoop";
 import { HoverFilmCard } from "@/components/film/HoverFilmCard";
 import { FilmPlayer } from "@/components/film/FilmPlayer";
 import { Media } from "@/components/Media";
@@ -20,7 +20,22 @@ export default function HomePage() {
   const journey = films.journey;
   return (
     <>
-      <ScreeningRoom />
+      {/* The Shopify opening: film first, with clear navigation over the footage. */}
+      <section className="opening-film" aria-labelledby="opening-title">
+        <AmbientLoop film={films["ambient-loop"]} priority sizes="100vw" focus="50% 20%" />
+        <div className="opening-film__overlay">
+          <nav className="opening-film__links" aria-label="Explore UNDR">
+            <Link className="bubble-link" href="/products/dirty-rodman-hoodie">Dirty Rodman <span aria-hidden="true">↗</span></Link>
+            <Link className="bubble-link" href="/pages/content-creator-application">Get featured <span aria-hidden="true">↗</span></Link>
+            <Link className="bubble-link" href="/pages/about-undr-rated-szn">Our story <span aria-hidden="true">↗</span></Link>
+          </nav>
+          <div className="opening-film__copy">
+            <span className="micro">UNDR.RATED.SZN / Remain authentic.</span>
+            <h1 id="opening-title">One last dance<br />with Dirty Rodman.</h1>
+            <a className="opening-film__scroll" href="#the-collection">Meet the collection <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
 
       {/* Scroll from the moving campaign into the two original portraits. */}
       <section id="the-collection" className="hero" aria-labelledby="hero-title">
@@ -63,24 +78,8 @@ export default function HomePage() {
       </section>
 
       {/* The original Shopify story film follows the two portraits. */}
-      <section id="the-story-film" className="journey-band" aria-labelledby="journey-title">
+      <section id="the-story-film" className="journey-band" aria-label={journey.title}>
         <div className="container">
-          <div className="journey-band__head">
-            <div style={{ display: "grid", gap: 20 }}>
-              <span className="eyebrow eyebrow--red">
-                A film · {journey.durationLabel}
-              </span>
-              <h2 id="journey-title" className="display h-xl">
-                The <span className="outline-text">Journey.</span>
-              </h2>
-            </div>
-            <div style={{ display: "grid", gap: 20, justifyItems: "start" }}>
-              <p>{journey.description}</p>
-              <Link className="link-arrow" href="/pages/journey">
-                Open the film page ↗
-              </Link>
-            </div>
-          </div>
           <div className="reveal">
             <FilmPlayer film={journey} showChapters />
           </div>
@@ -95,17 +94,26 @@ export default function HomePage() {
         <ProductShowcase kicker="The collection / 01—02" title="Choose your side." />
       </section>
 
-      <section className="container section campaign-shorts" aria-labelledby="campaign-shorts-title">
-        <div className="campaign-shorts__copy">
-          <span className="eyebrow eyebrow--red">Dirty Rodman / In motion</span>
-          <h2 id="campaign-shorts-title" className="display h-lg">
-            Off the<br />hanger.<br /><span className="outline-text">Into the street.</span>
-          </h2>
-          <p>Two short scenes. One unmistakable graphic. Watch the Dirty Rodman collection come to life.</p>
-          <Link className="link-arrow" href="/pages/behind-the-scenes-dirty-rodman">
-            Explore the campaign ↗
-          </Link>
+      <section className="container section section--rule" aria-labelledby="giveback-title">
+        <div className="split giveback">
+          <Media id="bahamas-giveback" ratio="1290 / 1575" sizes="(max-width: 860px) 92vw, (max-width: 1350px) 44vw, 560px" />
+          <div className="split__copy">
+            <span className="eyebrow eyebrow--red">Beyond the drop</span>
+            <h2 id="giveback-title" className="display h-lg">Can carry more.</h2>
+            <p>When we were in the Bahamas, we shared UNDR pieces with young people in the community. It reminded us that this brand should reach beyond what we wear—it should be about showing up, sharing what we create, and helping somebody feel seen.</p>
+            <p>Every purchase helps UNDR.RATED.SZN keep growing.</p>
+            <div className="giveback__links">
+              <Link className="btn btn--red" href="/collections/all">Shop the collection</Link>
+              <button className="btn giveback__pending" type="button" disabled>
+                Support the next giveback
+                <span className="micro">Coming soon</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section className="container section campaign-shorts" aria-label="Dirty Rodman campaign films">
         {[films["bts-reel"], films["campaign-cut"]].map((film, index) => (
           <article className="campaign-shorts__film" key={film.id}>
             <HoverFilmCard film={film} previewSrc={film.id === "campaign-cut" ? "/videos/portrait-02-loop.mp4" : "/videos/portrait-01-loop.mp4"} />

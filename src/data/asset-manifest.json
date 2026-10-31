@@ -2,7 +2,7 @@
   "audit_date": "2026-10-14",
   "mode": "design-prototype",
   "media_mode": "local-optimized",
-  "media_count": 24,
+  "media_count": 25,
   "assets": [
     {
       "id": "black-front",
@@ -749,6 +749,34 @@
         {
           "width": 950,
           "src": "/media/images/campus-celebration-950.webp"
+        }
+      ]
+    },
+    {
+      "id": "bahamas-giveback",
+      "original_url": "/media/images/bahamas-giveback-1290.webp",
+      "alt": "Four people on a palm-lined court in the Bahamas, three wearing UNDR graphic shirts",
+      "kind": "photograph",
+      "source_page": "/",
+      "inspection": "Brand-supplied Bahamas photograph from the homepage edit brief",
+      "notes": "Keep the full portrait in frame.",
+      "local_file": "/media/images/bahamas-giveback-1290.webp",
+      "variants": [
+        {
+          "width": 240,
+          "src": "/media/images/bahamas-giveback-240.webp"
+        },
+        {
+          "width": 480,
+          "src": "/media/images/bahamas-giveback-480.webp"
+        },
+        {
+          "width": 800,
+          "src": "/media/images/bahamas-giveback-800.webp"
+        },
+        {
+          "width": 1290,
+          "src": "/media/images/bahamas-giveback-1290.webp"
         }
       ]
     }

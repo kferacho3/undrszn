@@ -5,6 +5,7 @@ const path = 'src/data/asset-manifest.json';
 const manifest = JSON.parse(await fs.readFile(path, 'utf8'));
 await fs.mkdir('public/media/images', { recursive: true });
 for (const asset of manifest.assets) {
+  if (asset.original_url.startsWith('/')) continue; // Owner-supplied local photography.
   const url = new URL(asset.original_url);
   url.searchParams.set('width', '2400');
   url.searchParams.set('format', 'jpg');
