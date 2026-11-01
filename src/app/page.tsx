@@ -1,4 +1,5 @@
 import Link from "next/link";
+import localFont from "next/font/local";
 import { BrandMeanings } from "@/components/BrandMeanings";
 import { AmbientLoop } from "@/components/film/AmbientLoop";
 import { HoverFilmCard } from "@/components/film/HoverFilmCard";
@@ -8,6 +9,11 @@ import { Newsletter } from "@/components/Newsletter";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { formatMoney, products } from "@/data/catalog";
 import { films } from "@/data/films";
+
+const openingFont = localFont({
+  src: "../../node_modules/@fontsource/assistant/files/assistant-latin-400-normal.woff2",
+  weight: "400",
+});
 
 const frames = [
   { id: "cream-full-look", href: "/products/deluxe-dirty-rodamn", caption: "Cream / Deluxe — full look" },
@@ -20,28 +26,11 @@ export default function HomePage() {
   const journey = films.journey;
   return (
     <>
-      {/* The Shopify opening: film first, with clear navigation over the footage. */}
-      <section className="opening-film" aria-labelledby="opening-title">
-        <AmbientLoop film={films["ambient-loop"]} priority sizes="100vw" focus="50% 20%" />
-        <div className="opening-film__overlay">
-          <nav className="opening-film__links" aria-label="Explore UNDR">
-            <Link className="bubble-link" href="/products/dirty-rodman-hoodie">Dirty Rodman <span aria-hidden="true">↗</span></Link>
-            <Link className="bubble-link" href="/pages/content-creator-application">Get featured <span aria-hidden="true">↗</span></Link>
-            <Link className="bubble-link" href="/pages/about-undr-rated-szn">Our story <span aria-hidden="true">↗</span></Link>
-          </nav>
-          <div className="opening-film__copy">
-            <span className="micro">UNDR.RATED.SZN / Remain authentic.</span>
-            <h1 id="opening-title">One last dance<br />with Dirty Rodman.</h1>
-            <a className="opening-film__scroll" href="#the-collection">Meet the collection <span aria-hidden="true">↓</span></a>
-          </div>
-        </div>
-      </section>
-
-      {/* Scroll from the moving campaign into the two original portraits. */}
+      {/* 01 — Opening: two expressions, one decision */}
       <section id="the-collection" className="hero" aria-labelledby="hero-title">
         <div className="hero__visual">
-          <Media id="black-portrait" ratio="auto" sizes="50vw" width={1800} focus="50% 25%" />
-          <Media id="cream-hood" ratio="auto" sizes="50vw" width={1800} focus="50% 25%" />
+          <Media id="black-portrait" ratio="auto" priority sizes="50vw" width={1800} focus="50% 25%" />
+          <Media id="cream-hood" ratio="auto" priority sizes="50vw" width={1800} focus="50% 25%" />
         </div>
         <span className="hero__tag hero__tag--l">
           01 / Black
@@ -55,17 +44,17 @@ export default function HomePage() {
         </span>
         <div className="container hero__content">
           <span className="eyebrow eyebrow--red">The Dirty Rodman Collection</span>
-          <h2 id="hero-title" className="display hero__title">
-            Two sides. <span className="outline-text">One SZN</span>
+          <h1 id="hero-title" className="display hero__title">
+            One last <span className="outline-text">dance</span>
             <span className="red-text">.</span>
-          </h2>
+          </h1>
           <div className="hero__row">
             <p className="hero__sub">Two expressions. One unmistakable graphic. Find the one that feels like you.</p>
             <div className="hero__actions">
-              <Link className="bubble-link" href="/collections/all">
+              <Link className="btn btn--red" href="/collections/all">
                 Shop the collection <span className="arrow" aria-hidden="true">↗</span>
               </Link>
-              <Link className="bubble-link" href="/pages/journey">
+              <Link className="btn" href="/pages/journey">
                 Watch the Journey <span className="arrow" aria-hidden="true">↗</span>
               </Link>
             </div>
@@ -77,7 +66,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* The original Shopify story film follows the two portraits. */}
+      {/* The original Shopify film and its three navigation buttons. */}
+      <section className={`opening-film ${openingFont.className}`} aria-labelledby="opening-title">
+        <AmbientLoop film={films["ambient-loop"]} sizes="100vw" focus="50% 20%" />
+        <div className="opening-film__overlay">
+          <nav className="opening-film__links" aria-label="Explore UNDR">
+            <Link href="/products/dirty-rodman-hoodie">Dirty Rodman</Link>
+            <Link href="/pages/content-creator-application">Get featured</Link>
+            <Link href="/pages/about-undr-rated-szn">Our story</Link>
+          </nav>
+          <h2 id="opening-title">One last dance with Dirty Rodman</h2>
+        </div>
+      </section>
+
+      {/* The Journey follows the campaign film. */}
       <section id="the-story-film" className="journey-band" aria-label={journey.title}>
         <div className="container">
           <div className="reveal">
